@@ -8,7 +8,7 @@ import numpy as np
 import math
 import json
 import time
-
+from syntenic_plot import syntenic_plot_allpairs
 #ROOT_FOLDR = "/mnt/raid5-1/jinfang/dbCAN3/db/"
 
 def Sum_bitscore(genes):
@@ -921,17 +921,18 @@ def cgc_substrate_prediction(args):
         sub_pred.dbcan_sub_intermediate_file()
     time_end = time.time()
     
-    ### plot the syntenic block 
-    if args.command == 'cgc_substrate_prediction':
-        os.chdir(args.workdir)
-    if args.db_dir.startswith("/"):
-        plot_command = f"syntenic_plot syntenic_plot -b PUL_blast.out --cgc cgc_standard.out -i {args.out} --db {args.db_dir}"
-    else:
-        plot_command = f"syntenic_plot syntenic_plot -b PUL_blast.out --cgc cgc_standard.out -i {args.out} --db ../{args.db_dir}"
-    #print command
-    print(plot_command)
-    os.system(plot_command)
-    print(f"All done! {(time_end-time_start)}s")
+    # ### plot the syntenic block 
+    # if args.command == 'cgc_substrate_prediction':
+    #     os.chdir(args.workdir)
+    # if args.db_dir.startswith("/"):
+    #     plot_command = f"syntenic_plot syntenic_plot -b PUL_blast.out --cgc cgc_standard_out.tsv -i {args.out} --db {args.db_dir}"
+    #     syntenic_plot_allpairs
+    # else:
+    #     plot_command = f"syntenic_plot syntenic_plot -b PUL_blast.out --cgc cgc_standard_out.tsv -i {args.out} --db ../{args.db_dir}"
+    # #print command
+    # print(plot_command)
+    # os.system(plot_command)
+    # print(f"All done! {(time_end-time_start)}s")
 
 class HitParamter(object):
     '''

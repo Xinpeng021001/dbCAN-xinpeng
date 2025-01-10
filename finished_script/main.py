@@ -11,6 +11,8 @@ from OverviewGenerator import OverviewGenerator
 from generate_cgc_gff import GFFProcessor
 from CGCFinder_pandas_class import CGCFinder
 from cgc_substrate_prediction import cgc_substrate_prediction
+from syntenic_plot import  syntenic_plot_allpairs
+
 
 
 def run_dbCAN_database(dbCAN_database_config):
@@ -74,53 +76,64 @@ def run_CGC_annotation(cgc_config):
 
 def main():
     parser = argparse.ArgumentParser(description='CAZyme analysis workflow management.')
-    parser.add_argument('command', choices=['database', 'input_process', 'CAZyme_annotation', 'CGC_info', 'CGC_annotation', 'cgc_substrate_prediction'],
-                        help='The function to run: \n'
-'database - Downloads and prepares the dbCAN database files.\n'
-'input_process - Processes the input fasta files for annotation.\n'
-'CAZyme_annotation - Runs the CAZyme annotation using specified methods.\n'
-'CGC_info - Prepares the input files for CGC annotation.\n'
-'CGC_annotation - Runs the CGC annotation using specified methods.\n'
-'cgc_substrate_prediction - Predicts the substrates of CGCs.')
-    parser.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
-    parser.add_argument('--input_raw_data', help='Specify the input fasta file for data preprocessing.')
-    parser.add_argument('--input_gff', help='Specify the input gff file for CGC annotation.')
-    parser.add_argument('--mode', help='Check the mode of the input file.')
-    parser.add_argument('--output_dir', default='./output', help='Output folder.')
-    parser.add_argument('--input_format', default='NCBI', choices=['NCBI', 'JGI'], help='Specify the input format for protein sequences.')
-    parser.add_argument('--input_gff_format', default='NCBI', choices=['NCBI_euk', 'JGI', 'NCBI_prok', 'prodigal'], help='Specify the input format for protein sequences.')
 
-    parser.add_argument('--methods', nargs='+', choices=['diamond', 'hmm', 'dbCANsub'],
-                        default=['diamond', 'hmm', 'dbCANsub'],help='Specify the annotation methods to use. Options are diamond, hmm, and dbCANsub.')
+    subparsers = parser.add_subparsers(dest='command')
+    
+    parser_database = subparsers.add_parser('database')
+    parser_database.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
 
-    parser.add_argument('--diamond_evalue', type=float, default=1e-102, help='E-value threshold for diamond annotation.')
-    parser.add_argument('--diamond_threads', type=int, default=psutil.cpu_count(), help='Number of threads for diamond annotation.')
-    parser.add_argument('--diamond_verbose_option', action='store_true', default=False,  help='Enable verbose output for diamond.')
+    parser_input_process = subparsers.add_parser('input_process')
+    parser_input_process.add_argument('--input_raw_data', help='Specify the input fasta file for data preprocessing.')
+    parser_input_process.add_argument('--mode', help='Check the mode of the input file.')
+    parser_input_process.add_argument('--input_format', default='NCBI', choices=['NCBI', 'JGI'], help='Specify the input format for protein sequences.')
+    parser_input_process.add_argument('--output_dir', default='./output', help='Output folder.')
+    parser_input_process.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
 
-    parser.add_argument('--dbcan_hmm_evalue', type=float, default=1e-15, help='E-value threshold for HMM annotation.')
-    parser.add_argument('--dbcan_hmm_coverage', type=float, default=0.35, help='Coverage threshold for HMM annotation.')
-    parser.add_argument('--hmmer_cpu',type=int,default=psutil.cpu_count(), help='Number of threads for HMM annotation.')
-
-    parser.add_argument('--dbcansub_hmm_evalue', type=float, default=1e-15, help='E-value threshold for dbCANsub annotation.')
-    parser.add_argument('--dbcansub_hmm_coverage', type=float, default=0.35, help='Coverage threshold for dbCANsub annotation.')
-
-
-    parser.add_argument('--tc_evalue', type=float, default=1e-15, help='E-value threshold for TC annotation.')
-    parser.add_argument('--tc_coverage', type=float, default=0.35, help='Coverage threshold for TC annotation.')
-    parser.add_argument('--tf_evalue', type=float, default=1e-15, help='E-value threshold for TF annotation.')
-    parser.add_argument('--tf_coverage', type=float, default=0.35, help='Coverage threshold for TF annotation.')
-    parser.add_argument('--stp_evalue', type=float, default=1e-15, help='E-value threshold for STP annotation.')
-    parser.add_argument('--stp_coverage', type=float, default=0.35, help='Coverage threshold for STP annotation.')
+    
+    
+    parser_caz_annotation = subparsers.add_parser('CAZyme_annotation')
+    parser_caz_annotation.add_argument('--methods', nargs='+', choices=['diamond', 'hmm', 'dbCANsub'],
+        default=['diamond', 'hmm', 'dbCANsub'],help='Specify the annotation methods to use. Options are diamond, hmm, and dbCANsub.')
+    parser_caz_annotation.add_argument('--diamond_evalue', type=float, default=1e-102, help='E-value threshold for diamond annotation.')
+    parser_caz_annotation.add_argument('--diamond_threads', type=int, default=psutil.cpu_count(), help='Number of threads for diamond annotation.')
+    parser_caz_annotation.add_argument('--diamond_verbose_option', action='store_true', default=False,  help='Enable verbose output for diamond.')
+    parser_caz_annotation.add_argument('--dbcan_hmm_evalue', type=float, default=1e-15, help='E-value threshold for HMM annotation.')
+    parser_caz_annotation.add_argument('--dbcan_hmm_coverage', type=float, default=0.35, help='Coverage threshold for HMM annotation.')
+    parser_caz_annotation.add_argument('--hmmer_cpu',type=int,default=psutil.cpu_count(), help='Number of threads for HMM annotation.')
+    parser_caz_annotation.add_argument('--dbcansub_hmm_evalue', type=float, default=1e-15, help='E-value threshold for dbCANsub annotation.')
+    parser_caz_annotation.add_argument('--dbcansub_hmm_coverage', type=float, default=0.35, help='Coverage threshold for dbCANsub annotation.')
+    parser_caz_annotation.add_argument('--output_dir', default='./output', help='Output folder.')
+    parser_caz_annotation.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
 
 
-    parser.add_argument('--additional_genes', nargs='+', default=["TC"], help='Specify additional gene types for CGC annotation, including TC, TF, and STP')
-    parser.add_argument('--num_null_gene', type=int, default=2, help='Maximum number of null genes allowed between signature genes.')
-    parser.add_argument('--base_pair_distance', type=int, default=15000, help='Base pair distance of sig genes for CGC annotation.')
-    parser.add_argument('--use_null_genes', action='store_true', default=True, help='Use null genes in CGC annotation.')
-    parser.add_argument('--use_distance', action='store_true', default=False, help='Use base pair distance in CGC annotation.')
+    parser_cgc_info = subparsers.add_parser('CGC_info')
+    parser_cgc_info.add_argument('--input_gff', help='Specify the input gff file for CGC annotation.')
+    parser_cgc_info.add_argument('--input_gff_format', default='NCBI_prok', choices=['NCBI_euk', 'JGI', 'NCBI_prok', 'prodigal'], help='Specify the input format for protein sequences.')
+    parser_cgc_info.add_argument('--tc_evalue', type=float, default=1e-15, help='E-value threshold for TC annotation.')
+    parser_cgc_info.add_argument('--diamond_threads', type=int, default=psutil.cpu_count(), help='Number of threads for diamond annotation.')
+    parser_cgc_info.add_argument('--hmmer_cpu',type=int,default=psutil.cpu_count(), help='Number of threads for HMM annotation.')
+    parser_cgc_info.add_argument('--tc_coverage', type=float, default=0.35, help='Coverage threshold for TC annotation.')
+    parser_cgc_info.add_argument('--diamond_verbose_option', action='store_true', default=False,  help='Enable verbose output for diamond.')
+    parser_cgc_info.add_argument('--tf_evalue', type=float, default=1e-15, help='E-value threshold for TF annotation.')
+    parser_cgc_info.add_argument('--tf_coverage', type=float, default=0.35, help='Coverage threshold for TF annotation.')
+    parser_cgc_info.add_argument('--stp_evalue', type=float, default=1e-15, help='E-value threshold for STP annotation.')
+    parser_cgc_info.add_argument('--stp_coverage', type=float, default=0.35, help='Coverage threshold for STP annotation.')
+    parser_cgc_info.add_argument('--output_dir', default='./output', help='Output folder.')
+    parser_cgc_info.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
+
+    parser_cgc_annotation = subparsers.add_parser('CGC_annotation')
+    parser_cgc_annotation.add_argument('--additional_genes', nargs='+', default=["TC"], help='Specify additional gene types for CGC annotation, including TC, TF, and STP')
+    parser_cgc_annotation.add_argument('--num_null_gene', type=int, default=2, help='Maximum number of null genes allowed between signature genes.')
+    parser_cgc_annotation.add_argument('--base_pair_distance', type=int, default=15000, help='Base pair distance of sig genes for CGC annotation.')
+    parser_cgc_annotation.add_argument('--use_null_genes', action='store_true', default=True, help='Use null genes in CGC annotation.')
+    parser_cgc_annotation.add_argument('--use_distance', action='store_true', default=False, help='Use base pair distance in CGC annotation.')
+    parser_cgc_annotation.add_argument('--output_dir', default='./output', help='Output folder.')
+    parser_cgc_annotation.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
 
 
-    group = parser.add_argument_group('general optional arguments')
+
+    parser_cgc_substrate = subparsers.add_parser('cgc_substrate_prediction')
+    group = parser_cgc_substrate.add_argument_group('general optional arguments')
     group.add_argument('-i','--input',help="input file: dbCAN3 output folder")
     group.add_argument('--cgc')
     group.add_argument('--pul',help="dbCAN-PUL PUL.faa")
@@ -132,11 +145,13 @@ def main():
     group.add_argument('-env','--env',type=str,default="local")
     group.add_argument('-odbcan_sub','--odbcan_sub', help="output dbcan_sub prediction intermediate result?")
     group.add_argument('-odbcanpul','--odbcanpul',type=bool,default=True,help="output dbCAN-PUL prediction intermediate result?")
-    
+    group.add_argument('--output_dir', default='./output', help='Output folder.')
+    group.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
+
     ### paramters to identify a homologous PUL
     ### including blastp evalue,number of CAZyme pair, number of pairs, extra pair, bitscore_cutoff, uniq query cgc gene hits.
     ### uniq PUL gene hits. identity cutoff. query coverage cutoff.
-    group1 = parser.add_argument_group('dbCAN-PUL homologous conditons', 'how to define homologous gene hits and PUL hits')
+    group1 = parser_cgc_substrate.add_argument_group('dbCAN-PUL homologous conditons', 'how to define homologous gene hits and PUL hits')
     group1.add_argument('-upghn','--uniq_pul_gene_hit_num',default = 2,type=int)
     group1.add_argument('-uqcgn','--uniq_query_cgc_gene_num',default = 2,type=int)
     group1.add_argument('-cpn','--CAZyme_pair_num',default = 1,type=int)
@@ -148,13 +163,104 @@ def main():
     group1.add_argument('-bsc','--bitscore_cutoff',default = 50,type=float,help="bitscore cutoff to identify a homologous hit")
     group1.add_argument('-evalue','--evalue_cutoff',default = 0.01,type=float,help="evalue cutoff to identify a homologous hit")
 
-    group2 = parser.add_argument_group('dbCAN-sub conditons', 'how to define dbsub hits and dbCAN-sub subfamily substrate')
+    group2 = parser_cgc_substrate.add_argument_group('dbCAN-sub conditons', 'how to define dbsub hits and dbCAN-sub subfamily substrate')
     group2.add_argument('-hmmcov','--hmmcov',default = 0.,type=float)
     group2.add_argument('-hmmevalue','--hmmevalue',default = 0.01,type=float)
     group2.add_argument('-ndsc','--num_of_domains_substrate_cutoff',default = 2,type=int,help="define how many domains share substrates in a CGC, one protein may include several subfamily domains.")
     group2.add_argument('-npsc','--num_of_protein_substrate_cutoff',default = 2,type=int,help="define how many sequences share substrates in a CGC, one protein may include several subfamily domains.")
     group2.add_argument('-subs','--substrate_scors',default = 2,type=int,help="each cgc contains with substrate must more than this value")
+
+
+    parser_syntenic = subparsers.add_parser('syntenic_plot_allpairs')
+    parser_syntenic.add_argument('function', help='what function will be used to analyze.', default='syntenic_plot')
+    parser_syntenic.add_argument('-i','--input',help='cgc_finder output')
+    parser_syntenic.add_argument('-b','--blastp',help='blastp result for cgc')
+    parser_syntenic.add_argument('--cgc')
+    parser_syntenic.add_argument('--pul')
+    parser_syntenic.add_argument('--db_dir', default="db", help='Database directory')
+
+# #     parser.add_argument('command', choices=['database', 'input_process', 'CAZyme_annotation', 'CGC_info', 'CGC_annotation', 'cgc_substrate_prediction'],
+# #                         help='The function to run: \n'
+# # 'database - Downloads and prepares the dbCAN database files.\n'
+# # 'input_process - Processes the input fasta files for annotation.\n'
+# # 'CAZyme_annotation - Runs the CAZyme annotation using specified methods.\n'
+# # 'CGC_info - Prepares the input files for CGC annotation.\n'
+# # 'CGC_annotation - Runs the CGC annotation using specified methods.\n'
+# # 'cgc_substrate_prediction - Predicts the substrates of CGCs.')
+#     parser.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
+#     parser.add_argument('--input_raw_data', help='Specify the input fasta file for data preprocessing.')
+#     parser.add_argument('--input_gff', help='Specify the input gff file for CGC annotation.')
+#     parser.add_argument('--mode', help='Check the mode of the input file.')
+#     parser.add_argument('--output_dir', default='./output', help='Output folder.')
+#     parser.add_argument('--input_format', default='NCBI', choices=['NCBI', 'JGI'], help='Specify the input format for protein sequences.')
+#     parser.add_argument('--input_gff_format', default='NCBI', choices=['NCBI_euk', 'JGI', 'NCBI_prok', 'prodigal'], help='Specify the input format for protein sequences.')
+
+#     parser.add_argument('--methods', nargs='+', choices=['diamond', 'hmm', 'dbCANsub'],
+#                         default=['diamond', 'hmm', 'dbCANsub'],help='Specify the annotation methods to use. Options are diamond, hmm, and dbCANsub.')
+
+#     parser.add_argument('--diamond_evalue', type=float, default=1e-102, help='E-value threshold for diamond annotation.')
+#     parser.add_argument('--diamond_threads', type=int, default=psutil.cpu_count(), help='Number of threads for diamond annotation.')
+#     parser.add_argument('--diamond_verbose_option', action='store_true', default=False,  help='Enable verbose output for diamond.')
+
+#     parser.add_argument('--dbcan_hmm_evalue', type=float, default=1e-15, help='E-value threshold for HMM annotation.')
+#     parser.add_argument('--dbcan_hmm_coverage', type=float, default=0.35, help='Coverage threshold for HMM annotation.')
+#     parser.add_argument('--hmmer_cpu',type=int,default=psutil.cpu_count(), help='Number of threads for HMM annotation.')
+
+#     parser.add_argument('--dbcansub_hmm_evalue', type=float, default=1e-15, help='E-value threshold for dbCANsub annotation.')
+#     parser.add_argument('--dbcansub_hmm_coverage', type=float, default=0.35, help='Coverage threshold for dbCANsub annotation.')
+
+
+#     parser.add_argument('--tc_evalue', type=float, default=1e-15, help='E-value threshold for TC annotation.')
+#     parser.add_argument('--tc_coverage', type=float, default=0.35, help='Coverage threshold for TC annotation.')
+#     parser.add_argument('--tf_evalue', type=float, default=1e-15, help='E-value threshold for TF annotation.')
+#     parser.add_argument('--tf_coverage', type=float, default=0.35, help='Coverage threshold for TF annotation.')
+#     parser.add_argument('--stp_evalue', type=float, default=1e-15, help='E-value threshold for STP annotation.')
+#     parser.add_argument('--stp_coverage', type=float, default=0.35, help='Coverage threshold for STP annotation.')
+
+
+#     parser.add_argument('--additional_genes', nargs='+', default=["TC"], help='Specify additional gene types for CGC annotation, including TC, TF, and STP')
+#     parser.add_argument('--num_null_gene', type=int, default=2, help='Maximum number of null genes allowed between signature genes.')
+#     parser.add_argument('--base_pair_distance', type=int, default=15000, help='Base pair distance of sig genes for CGC annotation.')
+#     parser.add_argument('--use_null_genes', action='store_true', default=True, help='Use null genes in CGC annotation.')
+#     parser.add_argument('--use_distance', action='store_true', default=False, help='Use base pair distance in CGC annotation.')
+
+
+#     group = parser.add_argument_group('general optional arguments')
+#     group.add_argument('-i','--input',help="input file: dbCAN3 output folder")
+#     group.add_argument('--cgc')
+#     group.add_argument('--pul',help="dbCAN-PUL PUL.faa")
+#     group.add_argument('-f','--fasta')
+#     group.add_argument('-b','--blastp')
+#     group.add_argument('-o','--out',default="substrate.out")
+#     group.add_argument('-w','--workdir',type=str,default=".")
+#     group.add_argument('-rerun','--rerun',type=bool,default=False)
+#     group.add_argument('-env','--env',type=str,default="local")
+#     group.add_argument('-odbcan_sub','--odbcan_sub', help="output dbcan_sub prediction intermediate result?")
+#     group.add_argument('-odbcanpul','--odbcanpul',type=bool,default=True,help="output dbCAN-PUL prediction intermediate result?")
     
+#     ### paramters to identify a homologous PUL
+#     ### including blastp evalue,number of CAZyme pair, number of pairs, extra pair, bitscore_cutoff, uniq query cgc gene hits.
+#     ### uniq PUL gene hits. identity cutoff. query coverage cutoff.
+#     group1 = parser.add_argument_group('dbCAN-PUL homologous conditons', 'how to define homologous gene hits and PUL hits')
+#     group1.add_argument('-upghn','--uniq_pul_gene_hit_num',default = 2,type=int)
+#     group1.add_argument('-uqcgn','--uniq_query_cgc_gene_num',default = 2,type=int)
+#     group1.add_argument('-cpn','--CAZyme_pair_num',default = 1,type=int)
+#     group1.add_argument('-tpn','--total_pair_num',default = 2,type=int)
+#     group1.add_argument('-ept','--extra_pair_type',default = None,type=str,help="None[TC-TC,STP-STP]. Some like sigunature hits")
+#     group1.add_argument('-eptn','--extra_pair_type_num',default ="0",type=str,help="specify signature pair cutoff.1,2")
+#     group1.add_argument('-iden','--identity_cutoff',default = 0.,type=float,help="identity to identify a homologous hit")
+#     group1.add_argument('-cov','--coverage_cutoff',default = 0.,type=float,help="query coverage cutoff to identify a homologous hit")
+#     group1.add_argument('-bsc','--bitscore_cutoff',default = 50,type=float,help="bitscore cutoff to identify a homologous hit")
+#     group1.add_argument('-evalue','--evalue_cutoff',default = 0.01,type=float,help="evalue cutoff to identify a homologous hit")
+
+#     group2 = parser.add_argument_group('dbCAN-sub conditons', 'how to define dbsub hits and dbCAN-sub subfamily substrate')
+#     group2.add_argument('-hmmcov','--hmmcov',default = 0.,type=float)
+#     group2.add_argument('-hmmevalue','--hmmevalue',default = 0.01,type=float)
+#     group2.add_argument('-ndsc','--num_of_domains_substrate_cutoff',default = 2,type=int,help="define how many domains share substrates in a CGC, one protein may include several subfamily domains.")
+#     group2.add_argument('-npsc','--num_of_protein_substrate_cutoff',default = 2,type=int,help="define how many sequences share substrates in a CGC, one protein may include several subfamily domains.")
+#     group2.add_argument('-subs','--substrate_scors',default = 2,type=int,help="each cgc contains with substrate must more than this value")
+
+
     args = parser.parse_args()
 
 
@@ -271,6 +377,9 @@ def main():
 
     if args.command == 'cgc_substrate_prediction':
         cgc_substrate_prediction(args)
+
+    if args.command == 'syntenic_plot_allpairs':
+        syntenic_plot_allpairs(args)
 
 
 if __name__ == '__main__':
