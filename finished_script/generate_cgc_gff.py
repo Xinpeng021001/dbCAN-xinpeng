@@ -65,7 +65,7 @@ class GFFProcessor:
                     if feature.type == 'gene':
                         protein_id = 'unknown'
                         cgc_annotation = 'unknown'
-                        if self.gff_type == "NCBI":
+                        if self.gff_type == "NCBI_euk":
                             non_mRNA_found = False
                             for sub_feature in feature.sub_features:
                                 if 'mRNA' not in sub_feature.type:
@@ -90,12 +90,36 @@ class GFFProcessor:
                                     if protein_id != 'unknown':
                                         break
 
+                        elif self.gff_type == "NCBI_prok":
+                            non_CDS_found  = False
+                            for sub_feature in feature.sub_features:
+                                if 'CDS' not in sub_feature.type:
+                                    protein_id = 'NA'
+                                    cgc_annotation = 'Other' + '|' + sub_feature.type
+                                    non_CDS_found = True
+                                    break
+
+                            if non_CDS_found:
+                                start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
+                                line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation}\n"
+                                output_file.write(line)
+                                continue
+
+                            for sub_feature in feature.sub_features:
+                                if sub_feature.type == 'CDS':
+                                    protein_id = sub_feature.qualifiers.get('protein_id', ['unknown'])[0]
+                                if protein_id != 'unknown':
+                                    break
+
+
+
+
                         elif self.gff_type == "JGI":
                             protein_id = feature.qualifiers.get("proteinId", ["unknown"])[0]
                         elif self.gff_type == "prodigal":
                             protein_id = feature.qualifiers.get("ID", ["unknown"])[0]
 
-                        cgc_annotation = cgc_data.get(protein_id, {}).get('CGC_annotation', 'Other|null')
+                        cgc_annotation = cgc_data.get(protein_id, {}).get('CGC_annotation', 'null')
 
                         start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
                         line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation}\n"

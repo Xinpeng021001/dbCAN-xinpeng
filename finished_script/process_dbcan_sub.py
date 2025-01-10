@@ -16,8 +16,8 @@ class DBCANProcessor:
         """
         try:
             df = pd.read_csv(self.mapping_file, sep='\t', header=None, skiprows=1, usecols=[2, 4, 0])
-            df[4] = df[4].str.strip()
-            df['key'] = df.apply(lambda x: (x[2], x[4]) if x[4] else (x[2], '-'), axis=1)
+            df[4] = df[4].str.strip().fillna('-')
+            df['key'] = df.apply(lambda x: (x[2], x[4]), axis=1)
             return pd.Series(df[0].values, index=pd.MultiIndex.from_tuples(df['key'])).to_dict()
         except FileNotFoundError:
             print(f"can't find file: {self.mapping_file}")
@@ -68,9 +68,9 @@ class DBCANProcessor:
 
 # if __name__ == "__main__":
 #         config = {
-#         'input_file': 'dbsub.hmm.out',
-#         'output_file': 'dbcan-sub.substrate.out',
-#         'mapping_file': './dbCAN_databases/fam-substrate-mapping.tsv'
+#         'input_file': 'dbCAN_hmm_results.tsv',
+#         'output_file': 'dbCAN-sub.substrate.tsv',
+#         'mapping_file': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/part1_script/dbCAN_db/fam-substrate-mapping.tsv'
 #     }
 #         processor = DBCANProcessor(config)
 

@@ -10,6 +10,7 @@ from process_dbcan_sub import DBCANProcessor
 from OverviewGenerator import OverviewGenerator
 from generate_cgc_gff import GFFProcessor
 from CGCFinder_pandas_class import CGCFinder
+from cgc_substrate_prediction import cgc_substrate_prediction
 
 
 def run_dbCAN_database(dbCAN_database_config):
@@ -73,13 +74,14 @@ def run_CGC_annotation(cgc_config):
 
 def main():
     parser = argparse.ArgumentParser(description='CAZyme analysis workflow management.')
-    parser.add_argument('command', choices=['database', 'input_process', 'CAZyme_annotation', 'CGC_info', 'CGC_annotation'],
+    parser.add_argument('command', choices=['database', 'input_process', 'CAZyme_annotation', 'CGC_info', 'CGC_annotation', 'cgc_substrate_prediction'],
                         help='The function to run: \n'
 'database - Downloads and prepares the dbCAN database files.\n'
 'input_process - Processes the input fasta files for annotation.\n'
 'CAZyme_annotation - Runs the CAZyme annotation using specified methods.\n'
 'CGC_info - Prepares the input files for CGC annotation.\n'
-'CGC_annotation - Runs the CGC annotation using specified methods.')
+'CGC_annotation - Runs the CGC annotation using specified methods.\n'
+'cgc_substrate_prediction - Predicts the substrates of CGCs.')
     parser.add_argument('--db_dir', default='./dbCAN_databases', help='Specify the directory to store the dbCAN database files.')
     parser.add_argument('--input_raw_data', help='Specify the input fasta file for data preprocessing.')
     parser.add_argument('--input_gff', help='Specify the input gff file for CGC annotation.')
@@ -118,7 +120,43 @@ def main():
     parser.add_argument('--use_distance', action='store_true', default=False, help='Use base pair distance in CGC annotation.')
 
 
+    group = parser.add_argument_group('general optional arguments')
+    group.add_argument('-i','--input',help="input file: dbCAN3 output folder")
+    group.add_argument('--cgc')
+    group.add_argument('--pul',help="dbCAN-PUL PUL.faa")
+    group.add_argument('-f','--fasta')
+    group.add_argument('-b','--blastp')
+    group.add_argument('-o','--out',default="substrate.out")
+    group.add_argument('-w','--workdir',type=str,default=".")
+    group.add_argument('-rerun','--rerun',type=bool,default=False)
+    group.add_argument('-env','--env',type=str,default="local")
+    group.add_argument('-odbcan_sub','--odbcan_sub', help="output dbcan_sub prediction intermediate result?")
+    group.add_argument('-odbcanpul','--odbcanpul',type=bool,default=True,help="output dbCAN-PUL prediction intermediate result?")
+    
+    ### paramters to identify a homologous PUL
+    ### including blastp evalue,number of CAZyme pair, number of pairs, extra pair, bitscore_cutoff, uniq query cgc gene hits.
+    ### uniq PUL gene hits. identity cutoff. query coverage cutoff.
+    group1 = parser.add_argument_group('dbCAN-PUL homologous conditons', 'how to define homologous gene hits and PUL hits')
+    group1.add_argument('-upghn','--uniq_pul_gene_hit_num',default = 2,type=int)
+    group1.add_argument('-uqcgn','--uniq_query_cgc_gene_num',default = 2,type=int)
+    group1.add_argument('-cpn','--CAZyme_pair_num',default = 1,type=int)
+    group1.add_argument('-tpn','--total_pair_num',default = 2,type=int)
+    group1.add_argument('-ept','--extra_pair_type',default = None,type=str,help="None[TC-TC,STP-STP]. Some like sigunature hits")
+    group1.add_argument('-eptn','--extra_pair_type_num',default ="0",type=str,help="specify signature pair cutoff.1,2")
+    group1.add_argument('-iden','--identity_cutoff',default = 0.,type=float,help="identity to identify a homologous hit")
+    group1.add_argument('-cov','--coverage_cutoff',default = 0.,type=float,help="query coverage cutoff to identify a homologous hit")
+    group1.add_argument('-bsc','--bitscore_cutoff',default = 50,type=float,help="bitscore cutoff to identify a homologous hit")
+    group1.add_argument('-evalue','--evalue_cutoff',default = 0.01,type=float,help="evalue cutoff to identify a homologous hit")
+
+    group2 = parser.add_argument_group('dbCAN-sub conditons', 'how to define dbsub hits and dbCAN-sub subfamily substrate')
+    group2.add_argument('-hmmcov','--hmmcov',default = 0.,type=float)
+    group2.add_argument('-hmmevalue','--hmmevalue',default = 0.01,type=float)
+    group2.add_argument('-ndsc','--num_of_domains_substrate_cutoff',default = 2,type=int,help="define how many domains share substrates in a CGC, one protein may include several subfamily domains.")
+    group2.add_argument('-npsc','--num_of_protein_substrate_cutoff',default = 2,type=int,help="define how many sequences share substrates in a CGC, one protein may include several subfamily domains.")
+    group2.add_argument('-subs','--substrate_scors',default = 2,type=int,help="each cgc contains with substrate must more than this value")
+    
     args = parser.parse_args()
+
 
     if args.command == 'CAZyme_annotation' and not args.methods:
         print("Error: At least one method must be specified for CAZyme annotation.")
@@ -231,6 +269,8 @@ def main():
         }
         run_CGC_annotation(cgc_config)
 
+    if args.command == 'cgc_substrate_prediction':
+        cgc_substrate_prediction(args)
 
 
 if __name__ == '__main__':
