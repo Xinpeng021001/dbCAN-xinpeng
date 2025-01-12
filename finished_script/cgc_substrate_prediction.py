@@ -322,9 +322,10 @@ class dbCAN_substrate_prediction(object):
 
         ### parameters
         #self.PULdb  = f"{ROOT_FOLDR}PUL.faa"
-        self.PULdb_diamond  = f"{ROOT_FOLDR}PUL.dmnd"
+        self.db_dir = args.db_dir 
+        self.PULdb_diamond  = os.path.join(self.db_dir, "PUL.dmnd")
 
-        self.pul_excel_filename = f"{ROOT_FOLDR}dbCAN-PUL.xlsx"
+        self.pul_excel_filename = os.path.join(self.db_dir, "dbCAN-PUL.xlsx")
         self.homologous_parameters  = HitParamter(args)
         self.dbsub_parameters  = dbcan_sub_parameter(args)
         
@@ -406,7 +407,7 @@ class dbCAN_substrate_prediction(object):
         SeqIO.write(self.seqs,self.tmp_CAZyme_pep,'fasta')
         
         outfmt = "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen"
-        self.diamond_command = f"diamond blastp --max-target-seqs 1 --query {self.tmp_CAZyme_pep} --db {self.PULdb_diamond} --evalue 0.01 --out {self.tmp_blastp_out} --threads {os.cpu_count()} -f {outfmt} --quiet"
+        self.diamond_command = f"diamond blastp --max-hsps 1 --query {self.tmp_CAZyme_pep} --db {self.PULdb_diamond} --evalue 0.01 --out {self.tmp_blastp_out} --threads {os.cpu_count()} -f {outfmt} --quiet"
         #self.blastp_command = f"blastp -max_hsps 1 -query {self.tmp_CAZyme_pep} -db {self.PULdb} -outfmt {outfmt} -evalue 0.01 -out {self.tmp_blastp_out} -num_threads 32 "
         #print(self.blastp_command)
         print(self.diamond_command)
@@ -600,12 +601,12 @@ class dbCAN_substrate_prediction(object):
             for blastp in self.queryCGC_best_genes_blastp_hit[queryCGC]:
                 print(blastp)
     
-    def print_result_and_blastp(self):
-        with open("dbcanpul.hit.blastp.txt",'w') as f:
-            for queryCGC in self.queryCGC_CGChits_genes_blastp_hit:
-                for hit_PULID_blastps in self.queryCGC_CGChits_genes_blastp_hit[queryCGC]:
-                    for blastp in hit_PULID_blastps:
-                        f.write(blastp.format_str()+"\n")
+    # def print_result_and_blastp(self):
+    #     with open("dbcanpul.hit.blastp.txt",'w') as f:
+    #         for queryCGC in self.queryCGC_CGChits_genes_blastp_hit:
+    #             for hit_PULID_blastps in self.queryCGC_CGChits_genes_blastp_hit[queryCGC]:
+    #                 for blastp in hit_PULID_blastps:
+    #                     f.write(blastp.format_str()+"\n")
 
     def dbCAN_PUL_substrate_predict(self):
         '''
@@ -620,8 +621,8 @@ class dbCAN_substrate_prediction(object):
         self.analyze_blastp_out()
         #self.get_best_pul_hit()
         self.get_best_pul_hit_and_blastphit()
-        if self.odbcanpul:
-            self.print_result_and_blastp()
+        # if self.odbcanpul:
+        #     self.print_result_and_blastp()
     
     def Read_CAZyme_substrate(self):
         '''
@@ -893,12 +894,12 @@ def cgc_prediction_webserver(args,sub_pred):
     ## {jobid:20221122142425,dbcansub:dbcansub,Sub_Pred:sub_pred,dbCAN_PUL:dbCAN_PUL,dbCAN_Sub:dbCAN_Sub}
     ## or {"jobid":"20221122161713","dbcansub":"","Sub_Pred":"sub_pred","dbCAN_PUL":"dbCAN_PUL","dbCAN_Sub":""}
 
-def dbCAN3_paramters_prepare(args):
-    args.input = args.output_dir if args.output_dir.endswith("/") else args.output_dir+"/"
-    args.workdir = args.output_dir if args.output_dir.endswith("/") else args.output_dir+"/"
-    ##
-    global ROOT_FOLDR 
-    ROOT_FOLDR = args.db_dir if args.db_dir.endswith("/") else args.db_dir+"/"
+# def dbCAN3_paramters_prepare(args):
+#     args.input = args.output_dir if args.output_dir.endswith("/") else args.output_dir+"/"
+#     args.workdir = args.output_dir if args.output_dir.endswith("/") else args.output_dir+"/"
+#     ##
+#     global ROOT_FOLDR 
+#     ROOT_FOLDR = args.db_dir if args.db_dir.endswith("/") else args.db_dir+"/"
 
 def cgc_substrate_prediction(args):
     ### add parameters for dealing with substrates
@@ -992,51 +993,51 @@ def clean_EC(sub):
         tmp_subs.append(tmp_sub.split(":")[0])
     return list(set(tmp_subs))
 
-def parse_argv():
-    parser = argparse.ArgumentParser(description='run_dbCAN substrate prediction.')
-    parser.add_argument('function', help='what function will be used to analyze.')
-    group = parser.add_argument_group('general optional arguments')
-    group.add_argument('-i','--input',help="input file: dbCAN3 output folder")
-    group.add_argument('--cgc')
-    group.add_argument('--pul',help="dbCAN-PUL PUL.faa")
-    group.add_argument('-f','--fasta')
-    group.add_argument('-b','--blastp')
-    group.add_argument('-o','--out',default="substrate.out")
-    group.add_argument('-w','--workdir',type=str,default=".")
-    group.add_argument('-rerun','--rerun',type=bool,default=False)
-    group.add_argument('-env','--env',type=str,default="local")
-    group.add_argument('-odbcan_sub','--odbcan_sub', help="output dbcan_sub prediction intermediate result?")
-    group.add_argument('-odbcanpul','--odbcanpul',type=bool,default=True,help="output dbCAN-PUL prediction intermediate result?")
-    parser.add_argument('--db_dir', default="db", help='Database directory')
+# def parse_argv():
+#     parser = argparse.ArgumentParser(description='run_dbCAN substrate prediction.')
+#     parser.add_argument('function', help='what function will be used to analyze.')
+#     group = parser.add_argument_group('general optional arguments')
+#     group.add_argument('-i','--input',help="input file: dbCAN3 output folder")
+#     group.add_argument('--cgc')
+#     group.add_argument('--pul',help="dbCAN-PUL PUL.faa")
+#     group.add_argument('-f','--fasta')
+#     group.add_argument('-b','--blastp')
+#     group.add_argument('-o','--out',default="substrate.out")
+#     group.add_argument('-w','--workdir',type=str,default=".")
+#     group.add_argument('-rerun','--rerun',type=bool,default=False)
+#     group.add_argument('-env','--env',type=str,default="local")
+#     group.add_argument('-odbcan_sub','--odbcan_sub', help="output dbcan_sub prediction intermediate result?")
+#     group.add_argument('-odbcanpul','--odbcanpul',type=bool,default=True,help="output dbCAN-PUL prediction intermediate result?")
+#     parser.add_argument('--db_dir', default="db", help='Database directory')
     
-    ### paramters to identify a homologous PUL
-    ### including blastp evalue,number of CAZyme pair, number of pairs, extra pair, bitscore_cutoff, uniq query cgc gene hits.
-    ### uniq PUL gene hits. identity cutoff. query coverage cutoff.
-    group1 = parser.add_argument_group('dbCAN-PUL homologous conditons', 'how to define homologous gene hits and PUL hits')
-    group1.add_argument('-upghn','--uniq_pul_gene_hit_num',default = 2,type=int)
-    group1.add_argument('-uqcgn','--uniq_query_cgc_gene_num',default = 2,type=int)
-    group1.add_argument('-cpn','--CAZyme_pair_num',default = 1,type=int)
-    group1.add_argument('-tpn','--total_pair_num',default = 2,type=int)
-    group1.add_argument('-ept','--extra_pair_type',default = None,type=str,help="None[TC-TC,STP-STP]. Some like sigunature hits")
-    group1.add_argument('-eptn','--extra_pair_type_num',default ="0",type=str,help="specify signature pair cutoff.1,2")
-    group1.add_argument('-iden','--identity_cutoff',default = 0.,type=float,help="identity to identify a homologous hit")
-    group1.add_argument('-cov','--coverage_cutoff',default = 0.,type=float,help="query coverage cutoff to identify a homologous hit")
-    group1.add_argument('-bsc','--bitscore_cutoff',default = 50,type=float,help="bitscore cutoff to identify a homologous hit")
-    group1.add_argument('-evalue','--evalue_cutoff',default = 0.01,type=float,help="evalue cutoff to identify a homologous hit")
+#     ### paramters to identify a homologous PUL
+#     ### including blastp evalue,number of CAZyme pair, number of pairs, extra pair, bitscore_cutoff, uniq query cgc gene hits.
+#     ### uniq PUL gene hits. identity cutoff. query coverage cutoff.
+#     group1 = parser.add_argument_group('dbCAN-PUL homologous conditons', 'how to define homologous gene hits and PUL hits')
+#     group1.add_argument('-upghn','--uniq_pul_gene_hit_num',default = 2,type=int)
+#     group1.add_argument('-uqcgn','--uniq_query_cgc_gene_num',default = 2,type=int)
+#     group1.add_argument('-cpn','--CAZyme_pair_num',default = 1,type=int)
+#     group1.add_argument('-tpn','--total_pair_num',default = 2,type=int)
+#     group1.add_argument('-ept','--extra_pair_type',default = None,type=str,help="None[TC-TC,STP-STP]. Some like sigunature hits")
+#     group1.add_argument('-eptn','--extra_pair_type_num',default ="0",type=str,help="specify signature pair cutoff.1,2")
+#     group1.add_argument('-iden','--identity_cutoff',default = 0.,type=float,help="identity to identify a homologous hit")
+#     group1.add_argument('-cov','--coverage_cutoff',default = 0.,type=float,help="query coverage cutoff to identify a homologous hit")
+#     group1.add_argument('-bsc','--bitscore_cutoff',default = 50,type=float,help="bitscore cutoff to identify a homologous hit")
+#     group1.add_argument('-evalue','--evalue_cutoff',default = 0.01,type=float,help="evalue cutoff to identify a homologous hit")
 
-    group2 = parser.add_argument_group('dbCAN-sub conditons', 'how to define dbsub hits and dbCAN-sub subfamily substrate')
-    group2.add_argument('-hmmcov','--hmmcov',default = 0.,type=float)
-    group2.add_argument('-hmmevalue','--hmmevalue',default = 0.01,type=float)
-    group2.add_argument('-ndsc','--num_of_domains_substrate_cutoff',default = 2,type=int,help="define how many domains share substrates in a CGC, one protein may include several subfamily domains.")
-    group2.add_argument('-npsc','--num_of_protein_substrate_cutoff',default = 2,type=int,help="define how many sequences share substrates in a CGC, one protein may include several subfamily domains.")
-    group2.add_argument('-subs','--substrate_scors',default = 2,type=int,help="each cgc contains with substrate must more than this value")
+#     group2 = parser.add_argument_group('dbCAN-sub conditons', 'how to define dbsub hits and dbCAN-sub subfamily substrate')
+#     group2.add_argument('-hmmcov','--hmmcov',default = 0.,type=float)
+#     group2.add_argument('-hmmevalue','--hmmevalue',default = 0.01,type=float)
+#     group2.add_argument('-ndsc','--num_of_domains_substrate_cutoff',default = 2,type=int,help="define how many domains share substrates in a CGC, one protein may include several subfamily domains.")
+#     group2.add_argument('-npsc','--num_of_protein_substrate_cutoff',default = 2,type=int,help="define how many sequences share substrates in a CGC, one protein may include several subfamily domains.")
+#     group2.add_argument('-subs','--substrate_scors',default = 2,type=int,help="each cgc contains with substrate must more than this value")
     
-    args = parser.parse_args()
-    return args
+#     args = parser.parse_args()
+#     return args
 
-def main():
-    args = parse_argv()
-    cgc_substrate_prediction(args)
+# def main():
+#     args = parse_argv()
+#     cgc_substrate_prediction(args)
 
 # if __name__=="__main__":
 #     args = parse_argv()

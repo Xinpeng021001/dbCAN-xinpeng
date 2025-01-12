@@ -262,7 +262,7 @@ Types1 = ['CAZyme', 'CAZyme', 'other', 'CAZyme', 'other', 'other', 'other', 'TC'
 
 blocks = ["0-0-30",f"1-{len(starts1)-1}-50",f"5-{len(starts1)-2}-84","13-3-65","2-11-76"]
 
-def syntenic_plot(starts,starts1,ends,ends1,strands,strands1,Types,Types1,blocks,cgcid,pulid):
+def syntenic_plot(starts,starts1,ends,ends1,strands,strands1,Types,Types1,blocks,cgcid,pulid, args):
     ### for legends
     custom_lines = [Line2D([0], [0], color="red", lw=4,alpha=0.5),
         Line2D([0], [0], color="blue", lw=4,alpha=0.5),
@@ -327,7 +327,7 @@ def syntenic_plot(starts,starts1,ends,ends1,strands,strands1,Types,Types1,blocks
     cgcid = cgcid.replace("|","_") ### need to replace "|" to "_", because | is a special chara for system
     ### for local 
     #print(f"Save figure to file synteny.pdf/{cgcid}-syntenic.pdf ")
-    plt.savefig(f"synteny_pdf/{cgcid}-syntenic.pdf")
+    plt.savefig(f"{args.output_dir}/synteny_pdf/{cgcid}-syntenic.pdf")
     plt.close()
     
 def read_blast_result_cgc(filename):
@@ -348,8 +348,8 @@ def syntenic_plot_allpairs(args):
     
     cgc_proteinid2gene,cgcid2gene,cgcid2geneid = read_UHGG_CGC_stanrdard_out(args.cgc)
     PULid_proteinid2gene,PULid2gene,PULid2geneid = read_PUL_cgcgff(args)
-    
-    os.makedirs("synteny_pdf", exist_ok=True)
+    pdf_directory = os.path.join(args.output_dir, "synteny_pdf")    
+    os.makedirs(pdf_directory, exist_ok=True)
 
     for line in open(args.input).readlines()[1:]: ### for each pairs
         lines = line.rstrip().split("\t")
@@ -386,7 +386,7 @@ def syntenic_plot_allpairs(args):
                 # print (cgcpul,query,hit,cgc_proteinid,pul_proteinid,genes1,genes2)
                 continue
             #print (cgc_proteinid2gene[cgc_proteinid],pul_proteinid2gene[pul_proteinid])
-        syntenic_plot(starts1,starts2,ends1,ends2,strands1,strands2,types1,types2,blocks,cgc,pul)
+        syntenic_plot(starts1,starts2,ends1,ends2,strands1,strands2,types1,types2,blocks,cgc,pul,args)
 
 def Get_parameters_for_plot(CGC_stanrdard_list):
     starts = [] ; ends = [] ; strands = []; types = []
@@ -486,28 +486,28 @@ def read_UHGG_CGC_stanrdard_out(filename):
     return geneid2gene,cgcid2gene,cgcid2geneid
 
 
-def parse_argv():
-    parser = argparse.ArgumentParser(description='syntenic plot for two homologous CGC')
-    parser.add_argument('function', help='what function will be used to analyze.')
-    parser.add_argument('-i','--input',help='cgc_finder output')
-    parser.add_argument('-b','--blastp',help='blastp result for cgc')
-    parser.add_argument('--cgc')
-    parser.add_argument('--pul')
-    parser.add_argument('--db_dir', default="db", help='Database directory')
-    args = parser.parse_args()
-    return args
+# def parse_argv():
+#     parser = argparse.ArgumentParser(description='syntenic plot for two homologous CGC')
+#     parser.add_argument('function', help='what function will be used to analyze.')
+#     parser.add_argument('-i','--input',help='cgc_finder output')
+#     parser.add_argument('-b','--blastp',help='blastp result for cgc')
+#     parser.add_argument('--cgc')
+#     parser.add_argument('--pul')
+#     parser.add_argument('--db_dir', default="db", help='Database directory')
+#     args = parser.parse_args()
+#     return args
 
 
-def main():
-    args = parse_argv()
-    syntenic_plot_allpairs(args)
+# def main():
+#     args = parse_argv()
+#     syntenic_plot_allpairs(args)
 
-if __name__ == "__main__":
-    args = parse_argv()
-    #syntenic_plot(starts,starts1,ends,ends1,strands,strands1,Types,Types1,blocks)
-    if args.function == "syntenic_plot":
-        ## python3 /home/jinfang/libsvm_practise/syntenic.plot.py syntenic_plot -b PUL.pairs.blastp -i cgc.pul.hits.strict --cgc cgc_standard.out
-        ## python3 syntenic.plot.py syntenic_plot -b PUL.pairs.blastp --cgc cgc_standard.out -i cgc.pul.hits.strict --pul PUL.out
-        ## python3 syntenic.plot.py syntenic_plot -b PUL.pairs.blastp --cgc cgc_standard.out -i cgc.pul.hits.strict
-        ## python3 /array1/www/dbCAN3/ty/syntenic.plot.py syntenic_plot -b blastp.out --cgc cgc_standard.out -i sub.prediction.out
-        syntenic_plot_allpairs(args)
+# if __name__ == "__main__":
+#     args = parse_argv()
+#     #syntenic_plot(starts,starts1,ends,ends1,strands,strands1,Types,Types1,blocks)
+#     if args.function == "syntenic_plot":
+#         ## python3 /home/jinfang/libsvm_practise/syntenic.plot.py syntenic_plot -b PUL.pairs.blastp -i cgc.pul.hits.strict --cgc cgc_standard.out
+#         ## python3 syntenic.plot.py syntenic_plot -b PUL.pairs.blastp --cgc cgc_standard.out -i cgc.pul.hits.strict --pul PUL.out
+#         ## python3 syntenic.plot.py syntenic_plot -b PUL.pairs.blastp --cgc cgc_standard.out -i cgc.pul.hits.strict
+#         ## python3 /array1/www/dbCAN3/ty/syntenic.plot.py syntenic_plot -b blastp.out --cgc cgc_standard.out -i sub.prediction.out
+#         syntenic_plot_allpairs(args)
