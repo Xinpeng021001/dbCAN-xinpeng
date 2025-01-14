@@ -1,0 +1,4396 @@
+{
+    "CGC1": {
+        "changelog": [],
+        "Cluster_ID": "CGC1",
+        "Gene_String": "GT119-GT28_e46-NA-NA-2.A.128.2.3-9.B.146.1.6",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414631.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "98403",
+                "Gene_Stop": "99647",
+                "Strand": "+",
+                "Protein_Family": "GT119"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414632.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "99644",
+                "Gene_Stop": "100711",
+                "Strand": "+",
+                "Protein_Family": "GT28_e46"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds83;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "94650",
+                "Gene_Stop": "96008",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds85;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "97087",
+                "Gene_Stop": "98403",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414627.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "93166",
+                "Gene_Stop": "94653",
+                "Strand": "+",
+                "Protein_Family": "2.A.128.2.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414629.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "96002",
+                "Gene_Stop": "97084",
+                "Strand": "+",
+                "Protein_Family": "9.B.146.1.6"
+            }
+        ]
+    },
+    "CGC10": {
+        "changelog": [],
+        "Cluster_ID": "CGC10",
+        "Gene_String": "GH24_e32-1.E.1.1.2-1.M.1.1.1-1.M.1.1.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415087.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "577613",
+                "Gene_Stop": "578110",
+                "Strand": "+",
+                "Protein_Family": "GH24_e32"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415086.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "577398",
+                "Gene_Stop": "577613",
+                "Strand": "+",
+                "Protein_Family": "1.E.1.1.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415088.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "578107",
+                "Gene_Stop": "578568",
+                "Strand": "+",
+                "Protein_Family": "1.M.1.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_588440.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "578327",
+                "Gene_Stop": "578509",
+                "Strand": "+",
+                "Protein_Family": "1.M.1.1.1"
+            }
+        ]
+    },
+    "CGC11": {
+        "changelog": [],
+        "Cluster_ID": "CGC11",
+        "Gene_String": "GT2-2.A.21.9.1-1.B.17.3.5-2.A.6.1.4-2.A.6.1.4-2.A.6.1.4-2.A.3.1.1-1.A.23.4.5-Trans_reg_C",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415101.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "590941",
+                "Gene_Stop": "593178",
+                "Strand": "-",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415102.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "593328",
+                "Gene_Stop": "594770",
+                "Strand": "-",
+                "Protein_Family": "2.A.21.9.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415104.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "595600",
+                "Gene_Stop": "596973",
+                "Strand": "+",
+                "Protein_Family": "1.B.17.3.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415105.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "597131",
+                "Gene_Stop": "597463",
+                "Strand": "+",
+                "Protein_Family": "2.A.6.1.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415106.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "597479",
+                "Gene_Stop": "598702",
+                "Strand": "+",
+                "Protein_Family": "2.A.6.1.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415107.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "598714",
+                "Gene_Stop": "601857",
+                "Strand": "+",
+                "Protein_Family": "2.A.6.1.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415108.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "601959",
+                "Gene_Stop": "603335",
+                "Strand": "+",
+                "Protein_Family": "2.A.3.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415109.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "603416",
+                "Gene_Stop": "604663",
+                "Strand": "-",
+                "Protein_Family": "1.A.23.4.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415103.1",
+                "Gene_Type": "TF",
+                "Gene_Start": "594760",
+                "Gene_Stop": "595443",
+                "Strand": "-",
+                "Protein_Family": "Trans_reg_C"
+            }
+        ]
+    },
+    "CGC12": {
+        "changelog": [],
+        "Cluster_ID": "CGC12",
+        "Gene_String": "CE9_e0-NA-NA-4.A.1.1.2-1.B.25.1.13",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415203.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "701603",
+                "Gene_Stop": "702751",
+                "Strand": "-",
+                "Protein_Family": "CE9_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds663;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "702811",
+                "Gene_Stop": "703611",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds665;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "706093",
+                "Gene_Stop": "707757",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415205.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "703944",
+                "Gene_Stop": "705890",
+                "Strand": "+",
+                "Protein_Family": "4.A.1.1.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415207.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "708334",
+                "Gene_Stop": "709740",
+                "Strand": "+",
+                "Protein_Family": "1.B.25.1.13"
+            }
+        ]
+    },
+    "CGC13": {
+        "changelog": [],
+        "Cluster_ID": "CGC13",
+        "Gene_String": "GH38_e0-NA-NA-4.A.2.1.3-3.D.4.3.2-3.D.4.3.2-8.A.79.1.1-1.A.30.2.2-1.A.30.2.2-2.C.1.2.1-2.C.1.2.1-2.C.1.2.1-2.C.1.2.1-4.B.1.1.1-2.A.4.1.4-3.D.4.3.2",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415260.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "767978",
+                "Gene_Stop": "770611",
+                "Strand": "+",
+                "Protein_Family": "GH38_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds724;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "774752",
+                "Gene_Stop": "775156",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds731;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "782085",
+                "Gene_Stop": "783128",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415259.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "765984",
+                "Gene_Stop": "767960",
+                "Strand": "+",
+                "Protein_Family": "4.A.2.1.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415261.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "771458",
+                "Gene_Stop": "773026",
+                "Strand": "+",
+                "Protein_Family": "3.D.4.3.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415262.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "773042",
+                "Gene_Stop": "774181",
+                "Strand": "+",
+                "Protein_Family": "3.D.4.3.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415263.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "774309",
+                "Gene_Stop": "774602",
+                "Strand": "+",
+                "Protein_Family": "8.A.79.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415265.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "775153",
+                "Gene_Stop": "775845",
+                "Strand": "+",
+                "Protein_Family": "1.A.30.2.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415266.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "775849",
+                "Gene_Stop": "776277",
+                "Strand": "+",
+                "Protein_Family": "1.A.30.2.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415267.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "776342",
+                "Gene_Stop": "777607",
+                "Strand": "+",
+                "Protein_Family": "2.C.1.2.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415268.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "777740",
+                "Gene_Stop": "779032",
+                "Strand": "+",
+                "Protein_Family": "2.C.1.2.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415269.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "779067",
+                "Gene_Stop": "779588",
+                "Strand": "+",
+                "Protein_Family": "2.C.1.2.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415270.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "779598",
+                "Gene_Stop": "780389",
+                "Strand": "+",
+                "Protein_Family": "2.C.1.2.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415272.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "783166",
+                "Gene_Stop": "783885",
+                "Strand": "+",
+                "Protein_Family": "4.B.1.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415273.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "783882",
+                "Gene_Stop": "784823",
+                "Strand": "-",
+                "Protein_Family": "2.A.4.1.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_588444.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "774196",
+                "Gene_Stop": "774309",
+                "Strand": "+",
+                "Protein_Family": "3.D.4.3.2"
+            }
+        ]
+    },
+    "CGC14": {
+        "changelog": [],
+        "Cluster_ID": "CGC14",
+        "Gene_String": "CE8_e3-NA-2.A.47.3.5",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415293.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "805998",
+                "Gene_Stop": "807281",
+                "Strand": "-",
+                "Protein_Family": "CE8_e3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds752;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "803503",
+                "Gene_Stop": "805764",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415291.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "801887",
+                "Gene_Stop": "803320",
+                "Strand": "+",
+                "Protein_Family": "2.A.47.3.5"
+            }
+        ]
+    },
+    "CGC15": {
+        "changelog": [],
+        "Cluster_ID": "CGC15",
+        "Gene_String": "AA6_e2-NA-2.A.40.1.3",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415524.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1067112",
+                "Gene_Stop": "1067708",
+                "Strand": "-",
+                "Protein_Family": "AA6_e2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds987;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1068081",
+                "Gene_Stop": "1068254",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415526.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "1068511",
+                "Gene_Stop": "1069839",
+                "Strand": "-",
+                "Protein_Family": "2.A.40.1.3"
+            }
+        ]
+    },
+    "CGC16": {
+        "changelog": [],
+        "Cluster_ID": "CGC16",
+        "Gene_String": "GT2-CE4_e321|GH153_e1-NA-2.A.21.2.1-2.A.108.2.3-2.A.108.2.3-3.A.23.6.1-1.B.55.1.1-9.B.34.1.3",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415541.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1086521",
+                "Gene_Stop": "1087846",
+                "Strand": "-",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415542.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1087839",
+                "Gene_Stop": "1089857",
+                "Strand": "-",
+                "Protein_Family": "CE4_e321|GH153_e1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1002;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1086106",
+                "Gene_Stop": "1086519",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415535.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1079305",
+                "Gene_Stop": "1080813",
+                "Strand": "+",
+                "Protein_Family": "2.A.21.2.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415537.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1082243",
+                "Gene_Stop": "1083370",
+                "Strand": "+",
+                "Protein_Family": "2.A.108.2.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415538.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1083376",
+                "Gene_Stop": "1084647",
+                "Strand": "+",
+                "Protein_Family": "2.A.108.2.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415539.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1084992",
+                "Gene_Stop": "1086056",
+                "Strand": "+",
+                "Protein_Family": "3.A.23.6.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415543.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1089866",
+                "Gene_Stop": "1092289",
+                "Strand": "-",
+                "Protein_Family": "1.B.55.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415544.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1092876",
+                "Gene_Stop": "1094234",
+                "Strand": "+",
+                "Protein_Family": "9.B.34.1.3"
+            }
+        ]
+    },
+    "CGC17": {
+        "changelog": [],
+        "Cluster_ID": "CGC17",
+        "Gene_String": "GH186-GT2-NA-NA-9.B.97.7.1-2.A.1.2.20",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415566.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1109335",
+                "Gene_Stop": "1110870",
+                "Strand": "+",
+                "Protein_Family": "GH186"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415567.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1110863",
+                "Gene_Stop": "1113406",
+                "Strand": "+",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1028;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1113579",
+                "Gene_Stop": "1113806",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1029;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1113807",
+                "Gene_Stop": "1114181",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415565.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1107784",
+                "Gene_Stop": "1108941",
+                "Strand": "-",
+                "Protein_Family": "9.B.97.7.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415571.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1114264",
+                "Gene_Stop": "1115490",
+                "Strand": "-",
+                "Protein_Family": "2.A.1.2.20"
+            }
+        ]
+    },
+    "CGC18": {
+        "changelog": [],
+        "Cluster_ID": "CGC18",
+        "Gene_String": "GH23_e734-GH37_e6-NA-NA-NA-2.A.36.6.11-1.E.43.1.1-4.A.2.1.17",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415711.2",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1243180",
+                "Gene_Stop": "1243791",
+                "Strand": "+",
+                "Protein_Family": "GH23_e734"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415715.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1245679",
+                "Gene_Stop": "1247376",
+                "Strand": "-",
+                "Protein_Family": "GH37_e6"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1172;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1242166",
+                "Gene_Stop": "1243080",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1174;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1243793",
+                "Gene_Stop": "1244527",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1176;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1245160",
+                "Gene_Stop": "1245600",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415709.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "1240335",
+                "Gene_Stop": "1242071",
+                "Strand": "-",
+                "Protein_Family": "2.A.36.6.11"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415713.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1244728",
+                "Gene_Stop": "1244982",
+                "Strand": "+",
+                "Protein_Family": "1.E.43.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415716.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "1247696",
+                "Gene_Stop": "1249114",
+                "Strand": "-",
+                "Protein_Family": "4.A.2.1.17"
+            }
+        ]
+    },
+    "CGC19": {
+        "changelog": [],
+        "Cluster_ID": "CGC19",
+        "Gene_String": "GH13_e137-GH109_e7-GH65_e4-NA-NA-NA-3.A.1.1.46-3.A.1.1.46-3.A.1.1.46-1.B.21.1.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415825.4",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1370216",
+                "Gene_Stop": "1371895",
+                "Strand": "+",
+                "Protein_Family": "GH13_e137"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415831.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1376832",
+                "Gene_Stop": "1377887",
+                "Strand": "+",
+                "Protein_Family": "GH109_e7"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415832.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1377884",
+                "Gene_Stop": "1380151",
+                "Strand": "+",
+                "Protein_Family": "GH65_e4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1297;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1374963",
+                "Gene_Stop": "1376015",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1298;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1376034",
+                "Gene_Stop": "1376822",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1301;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1380148",
+                "Gene_Stop": "1380807",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415826.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1371909",
+                "Gene_Stop": "1373201",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.1.46"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415827.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1373222",
+                "Gene_Stop": "1374103",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.1.46"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415828.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1374090",
+                "Gene_Stop": "1374932",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.1.46"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_415835.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1381947",
+                "Gene_Stop": "1382852",
+                "Strand": "+",
+                "Protein_Family": "1.B.21.1.1"
+            }
+        ]
+    },
+    "CGC2": {
+        "changelog": [],
+        "Cluster_ID": "CGC2",
+        "Gene_String": "CE11_e22-NA-3.A.5.1.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414638.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "106557",
+                "Gene_Stop": "107474",
+                "Strand": "+",
+                "Protein_Family": "CE11_e22"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds94;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "107705",
+                "Gene_Stop": "108217",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414640.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "108279",
+                "Gene_Stop": "110984",
+                "Strand": "+",
+                "Protein_Family": "3.A.5.1.1"
+            }
+        ]
+    },
+    "CGC20": {
+        "changelog": [],
+        "Cluster_ID": "CGC20",
+        "Gene_String": "GH24_e98-NA-1.E.1.1.2",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416072.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1639524",
+                "Gene_Stop": "1640057",
+                "Strand": "-",
+                "Protein_Family": "GH24_e98"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1543;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1640054",
+                "Gene_Stop": "1640365",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416074.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "1640370",
+                "Gene_Stop": "1640585",
+                "Strand": "-",
+                "Protein_Family": "1.E.1.1.2"
+            }
+        ]
+    },
+    "CGC21": {
+        "changelog": [],
+        "Cluster_ID": "CGC21",
+        "Gene_String": "GH2_e29-TetR_N-1.B.25.1.5-2.A.2.3.1-1.A.115.1.5-4.A.1.1.3-LacI",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416134.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1694260",
+                "Gene_Stop": "1696071",
+                "Strand": "-",
+                "Protein_Family": "GH2_e29"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416135.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "1696462",
+                "Gene_Stop": "1697052",
+                "Strand": "-",
+                "Protein_Family": "TetR_N"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416132.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "1691586",
+                "Gene_Stop": "1692851",
+                "Strand": "-",
+                "Protein_Family": "1.B.25.1.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416133.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1692890",
+                "Gene_Stop": "1694263",
+                "Strand": "-",
+                "Protein_Family": "2.A.2.3.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416136.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1697273",
+                "Gene_Stop": "1698040",
+                "Strand": "-",
+                "Protein_Family": "1.A.115.1.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416138.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1699355",
+                "Gene_Stop": "1700947",
+                "Strand": "+",
+                "Protein_Family": "4.A.1.1.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416137.1",
+                "Gene_Type": "TF",
+                "Gene_Start": "1698152",
+                "Gene_Stop": "1699180",
+                "Strand": "-",
+                "Protein_Family": "LacI"
+            }
+        ]
+    },
+    "CGC22": {
+        "changelog": [],
+        "Cluster_ID": "CGC22",
+        "Gene_String": "GH4_e24-4.A.3.2.1-4.A.3.2.1-4.A.3.2.1-HTH_AraC+HTH_AraC",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416248.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1817148",
+                "Gene_Stop": "1818500",
+                "Strand": "-",
+                "Protein_Family": "GH4_e24"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416250.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1819455",
+                "Gene_Stop": "1819805",
+                "Strand": "-",
+                "Protein_Family": "4.A.3.2.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416251.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1819856",
+                "Gene_Stop": "1821214",
+                "Strand": "-",
+                "Protein_Family": "4.A.3.2.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416252.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1821299",
+                "Gene_Stop": "1821619",
+                "Strand": "-",
+                "Protein_Family": "4.A.3.2.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416249.1",
+                "Gene_Type": "TF",
+                "Gene_Start": "1818605",
+                "Gene_Stop": "1819447",
+                "Strand": "-",
+                "Protein_Family": "HTH_AraC+HTH_AraC"
+            }
+        ]
+    },
+    "CGC23": {
+        "changelog": [],
+        "Cluster_ID": "CGC23",
+        "Gene_String": "CBM50_e567-AAA-3.A.1.15.5-3.A.1.15.5-3.A.1.15.5-3.A.11.1.5",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416370.2",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1940313",
+                "Gene_Stop": "1941635",
+                "Strand": "-",
+                "Protein_Family": "CBM50_e567"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416374.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "1944346",
+                "Gene_Stop": "1945356",
+                "Strand": "-",
+                "Protein_Family": "AAA"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416371.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "1941651",
+                "Gene_Stop": "1942583",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.15.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416372.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1942662",
+                "Gene_Stop": "1943417",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.15.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416373.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1943414",
+                "Gene_Stop": "1944199",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.15.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416375.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1945365",
+                "Gene_Stop": "1945976",
+                "Strand": "-",
+                "Protein_Family": "3.A.11.1.5"
+            }
+        ]
+    },
+    "CGC24": {
+        "changelog": [],
+        "Cluster_ID": "CGC24",
+        "Gene_String": "GT20_e1-NA-3.A.1.2.2-3.A.1.2.2-3.A.1.2.2",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416410.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "1980188",
+                "Gene_Stop": "1981612",
+                "Strand": "-",
+                "Protein_Family": "GT20_e1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1889;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "1981587",
+                "Gene_Stop": "1982387",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416413.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1983555",
+                "Gene_Stop": "1985069",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.2.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416414.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "1985139",
+                "Gene_Stop": "1986128",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.2.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026162.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "1982554",
+                "Gene_Stop": "1983540",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.2.2"
+            }
+        ]
+    },
+    "CGC25": {
+        "changelog": [],
+        "Cluster_ID": "CGC25",
+        "Gene_String": "GH13_e245-NA-9.B.102.1.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416437.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2006156",
+                "Gene_Stop": "2007643",
+                "Strand": "+",
+                "Protein_Family": "GH13_e245"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds1917;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2007677",
+                "Gene_Stop": "2008090",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416439.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2008277",
+                "Gene_Stop": "2009482",
+                "Strand": "+",
+                "Protein_Family": "9.B.102.1.1"
+            }
+        ]
+    },
+    "CGC26": {
+        "changelog": [],
+        "Cluster_ID": "CGC26",
+        "Gene_String": "GT4_e1752-GT113_e0-GT131-NA-Pyr_redox-2.A.66.2.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416536.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2103391",
+                "Gene_Stop": "2104509",
+                "Strand": "-",
+                "Protein_Family": "GT4_e1752"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416538.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2105065",
+                "Gene_Stop": "2106057",
+                "Strand": "-",
+                "Protein_Family": "GT113_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416539.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2106060",
+                "Gene_Stop": "2107226",
+                "Strand": "-",
+                "Protein_Family": "GT131"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2017;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2104494",
+                "Gene_Stop": "2105084",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416540.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "2107226",
+                "Gene_Stop": "2108329",
+                "Strand": "-",
+                "Protein_Family": "Pyr_redox"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416541.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2108337",
+                "Gene_Stop": "2109584",
+                "Strand": "-",
+                "Protein_Family": "2.A.66.2.1"
+            }
+        ]
+    },
+    "CGC27": {
+        "changelog": [],
+        "Cluster_ID": "CGC27",
+        "Gene_String": "GT4_e731-GT4_e2254-NA-NA-NA-NA-NA-9.B.18.2.4-2.A.66.2.7-9.B.18.1.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416548.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2115907",
+                "Gene_Stop": "2117127",
+                "Strand": "-",
+                "Protein_Family": "GT4_e731"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416554.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2124523",
+                "Gene_Stop": "2125746",
+                "Strand": "-",
+                "Protein_Family": "GT4_e2254"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2026;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2113434",
+                "Gene_Stop": "2114327",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2027;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2114502",
+                "Gene_Stop": "2115896",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2029;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2117124",
+                "Gene_Stop": "2118404",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2032;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2121609",
+                "Gene_Stop": "2122979",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2033;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2123084",
+                "Gene_Stop": "2124520",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416545.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2111976",
+                "Gene_Stop": "2113061",
+                "Strand": "-",
+                "Protein_Family": "9.B.18.2.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416550.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2118680",
+                "Gene_Stop": "2120158",
+                "Strand": "-",
+                "Protein_Family": "2.A.66.2.7"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416551.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2120160",
+                "Gene_Stop": "2121554",
+                "Strand": "-",
+                "Protein_Family": "9.B.18.1.1"
+            }
+        ]
+    },
+    "CGC28": {
+        "changelog": [],
+        "Cluster_ID": "CGC28",
+        "Gene_String": "GT2-GT4_e1042-GT2-NA-NA-NA-NA-NA-8.A.3.3.2-1.B.18.3.1-2.A.109.2.3-9.B.121.5.1-9.B.34.1.8",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416559.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2128904",
+                "Gene_Stop": "2129650",
+                "Strand": "-",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416561.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2130853",
+                "Gene_Stop": "2132070",
+                "Strand": "-",
+                "Protein_Family": "GT4_e1042"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416563.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2132558",
+                "Gene_Stop": "2133397",
+                "Strand": "-",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2040;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2129661",
+                "Gene_Stop": "2130878",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2042;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2132067",
+                "Gene_Stop": "2132555",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2045;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2135655",
+                "Gene_Stop": "2136098",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2049;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2141634",
+                "Gene_Stop": "2142215",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2050;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2142307",
+                "Gene_Stop": "2142948",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416564.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "2133490",
+                "Gene_Stop": "2135652",
+                "Strand": "-",
+                "Protein_Family": "8.A.3.3.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416566.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2136104",
+                "Gene_Stop": "2137243",
+                "Strand": "-",
+                "Protein_Family": "1.B.18.3.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416567.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "2137902",
+                "Gene_Stop": "2139485",
+                "Strand": "+",
+                "Protein_Family": "2.A.109.2.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416568.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2139759",
+                "Gene_Stop": "2141612",
+                "Strand": "-",
+                "Protein_Family": "9.B.121.5.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416571.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2143266",
+                "Gene_Stop": "2146583",
+                "Strand": "+",
+                "Protein_Family": "9.B.34.1.8"
+            }
+        ]
+    },
+    "CGC29": {
+        "changelog": [],
+        "Cluster_ID": "CGC29",
+        "Gene_String": "GH3_e1-NA-NA-NA-9.B.33.1.7-3.A.1.12.15-3.A.1.12.15-3.A.1.12.15-3.A.1.12.15-9.B.29.3.1-9.B.27.2.7-MerR",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416636.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2219692",
+                "Gene_Stop": "2221989",
+                "Strand": "-",
+                "Protein_Family": "GH3_e1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2111;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2215657",
+                "Gene_Stop": "2215764",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2117;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2222185",
+                "Gene_Stop": "2223900",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2118;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2223938",
+                "Gene_Stop": "2224870",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416630.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2212959",
+                "Gene_Stop": "2214644",
+                "Strand": "-",
+                "Protein_Family": "9.B.33.1.7"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416632.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2215745",
+                "Gene_Stop": "2216476",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.12.15"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416633.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2216481",
+                "Gene_Stop": "2217407",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.12.15"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416634.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2217400",
+                "Gene_Stop": "2218557",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.12.15"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416635.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2218564",
+                "Gene_Stop": "2219481",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.12.15"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416639.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "2225044",
+                "Gene_Stop": "2225631",
+                "Strand": "-",
+                "Protein_Family": "9.B.29.3.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416640.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "2225801",
+                "Gene_Stop": "2226379",
+                "Strand": "+",
+                "Protein_Family": "9.B.27.2.7"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416631.1",
+                "Gene_Type": "TF",
+                "Gene_Start": "2214866",
+                "Gene_Stop": "2215597",
+                "Strand": "+",
+                "Protein_Family": "MerR"
+            }
+        ]
+    },
+    "CGC3": {
+        "changelog": [],
+        "Cluster_ID": "CGC3",
+        "Gene_String": "AA1_e20-CE4_e2-NA-Pribosyltran-2.A.1.86.5-8.A.2.1.3-9.B.306.4.2-2.A.53.3.8-3.A.1.105.17-3.A.1.105.17",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414665.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "137083",
+                "Gene_Stop": "138633",
+                "Strand": "+",
+                "Protein_Family": "AA1_e20"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414672.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "145081",
+                "Gene_Stop": "146310",
+                "Strand": "+",
+                "Protein_Family": "CE4_e2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds124;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "144577",
+                "Gene_Stop": "145017",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414667.4",
+                "Gene_Type": "STP",
+                "Gene_Start": "141431",
+                "Gene_Stop": "141967",
+                "Strand": "+",
+                "Protein_Family": "Pribosyltran"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414663.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "135598",
+                "Gene_Stop": "136464",
+                "Strand": "-",
+                "Protein_Family": "2.A.1.86.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414664.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "136570",
+                "Gene_Stop": "136917",
+                "Strand": "-",
+                "Protein_Family": "8.A.2.1.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414666.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "138835",
+                "Gene_Stop": "141225",
+                "Strand": "-",
+                "Protein_Family": "9.B.306.4.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414668.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "142008",
+                "Gene_Stop": "142670",
+                "Strand": "-",
+                "Protein_Family": "2.A.53.3.8"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414669.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "142779",
+                "Gene_Stop": "143705",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.105.17"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414670.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "143702",
+                "Gene_Stop": "144472",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.105.17"
+            }
+        ]
+    },
+    "CGC30": {
+        "changelog": [],
+        "Cluster_ID": "CGC30",
+        "Gene_String": "GT2-GT83_e0-NA-NA-2.A.7.22.1-2.A.7.22.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416757.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2367071",
+                "Gene_Stop": "2368039",
+                "Strand": "+",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416760.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2370908",
+                "Gene_Stop": "2372560",
+                "Strand": "+",
+                "Protein_Family": "GT83_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2238;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2368039",
+                "Gene_Stop": "2370021",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2239;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2370018",
+                "Gene_Stop": "2370908",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416761.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "2372892",
+                "Gene_Stop": "2373278",
+                "Strand": "+",
+                "Protein_Family": "2.A.7.22.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_588462.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2372557",
+                "Gene_Stop": "2372892",
+                "Strand": "+",
+                "Protein_Family": "2.A.7.22.1"
+            }
+        ]
+    },
+    "CGC31": {
+        "changelog": [],
+        "Cluster_ID": "CGC31",
+        "Gene_String": "GT2-NA-NA-1.B.9.1.1-3.A.1.27.3-1.A.16.4.1-2.A.129.1.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416852.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2468214",
+                "Gene_Stop": "2469134",
+                "Strand": "+",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2328;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2463012",
+                "Gene_Stop": "2464070",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2331;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2466545",
+                "Gene_Stop": "2467702",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416846.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "2461306",
+                "Gene_Stop": "2462646",
+                "Strand": "+",
+                "Protein_Family": "1.B.9.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416848.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2464252",
+                "Gene_Stop": "2465007",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.27.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416849.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2465301",
+                "Gene_Stop": "2466233",
+                "Strand": "+",
+                "Protein_Family": "1.A.16.4.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_416851.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2467855",
+                "Gene_Stop": "2468217",
+                "Strand": "+",
+                "Protein_Family": "2.A.129.1.1"
+            }
+        ]
+    },
+    "CGC32": {
+        "changelog": [],
+        "Cluster_ID": "CGC32",
+        "Gene_String": "GH103_e0-4.A.4.1.1-4.A.4.1.1-4.A.4.1.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417181.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2824491",
+                "Gene_Stop": "2825576",
+                "Strand": "-",
+                "Protein_Family": "GH103_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417184.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2827362",
+                "Gene_Stop": "2827733",
+                "Strand": "+",
+                "Protein_Family": "4.A.4.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026180.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2825832",
+                "Gene_Stop": "2826395",
+                "Strand": "+",
+                "Protein_Family": "4.A.4.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026181.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2826392",
+                "Gene_Stop": "2827351",
+                "Strand": "+",
+                "Protein_Family": "4.A.4.1.1"
+            }
+        ]
+    },
+    "CGC33": {
+        "changelog": [],
+        "Cluster_ID": "CGC33",
+        "Gene_String": "GH1_e85-NA-NA-NA-NA-5.A.3.11.1-3.D.1.9.2-3.D.1.9.2-3.D.1.9.2-3.D.1.9.2-3.D.1.9.2-3.D.1.9.2-3.D.7.2.5-3.D.7.2.5-3.D.7.1.5-4.A.1.2.3-LacI",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417196.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2840990",
+                "Gene_Stop": "2842414",
+                "Strand": "+",
+                "Protein_Family": "GH1_e85"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2679;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2842573",
+                "Gene_Stop": "2843043",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2680;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2843036",
+                "Gene_Stop": "2843446",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2687;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2849974",
+                "Gene_Stop": "2850435",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2689;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2851001",
+                "Gene_Stop": "2851873",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417193.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2837578",
+                "Gene_Stop": "2838105",
+                "Strand": "-",
+                "Protein_Family": "5.A.3.11.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417199.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2843443",
+                "Gene_Stop": "2844210",
+                "Strand": "-",
+                "Protein_Family": "3.D.1.9.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417200.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2844210",
+                "Gene_Stop": "2844752",
+                "Strand": "-",
+                "Protein_Family": "3.D.1.9.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417201.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2844762",
+                "Gene_Stop": "2846471",
+                "Strand": "-",
+                "Protein_Family": "3.D.1.9.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417202.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2846489",
+                "Gene_Stop": "2847412",
+                "Strand": "-",
+                "Protein_Family": "3.D.1.9.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417203.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2847415",
+                "Gene_Stop": "2849241",
+                "Strand": "-",
+                "Protein_Family": "3.D.1.9.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417204.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2849238",
+                "Gene_Stop": "2849849",
+                "Strand": "-",
+                "Protein_Family": "3.D.1.9.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417206.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2850647",
+                "Gene_Stop": "2850997",
+                "Strand": "+",
+                "Protein_Family": "3.D.7.2.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417208.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2851864",
+                "Gene_Stop": "2852136",
+                "Strand": "+",
+                "Protein_Family": "3.D.7.2.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417209.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2852136",
+                "Gene_Stop": "2853257",
+                "Strand": "+",
+                "Protein_Family": "3.D.7.1.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026182.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2839524",
+                "Gene_Stop": "2840981",
+                "Strand": "+",
+                "Protein_Family": "4.A.1.2.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417194.2",
+                "Gene_Type": "TF",
+                "Gene_Start": "2838254",
+                "Gene_Stop": "2839264",
+                "Strand": "-",
+                "Protein_Family": "LacI"
+            }
+        ]
+    },
+    "CGC34": {
+        "changelog": [],
+        "Cluster_ID": "CGC34",
+        "Gene_String": "CBM50_e486-Sigma70_r2+Sigma70_r3+Sigma70_r4-2.A.8.1.7",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417222.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2867614",
+                "Gene_Stop": "2868753",
+                "Strand": "-",
+                "Protein_Family": "CBM50_e486"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417221.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "2866559",
+                "Gene_Stop": "2867551",
+                "Strand": "-",
+                "Protein_Family": "Sigma70_r2+Sigma70_r3+Sigma70_r4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417220.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2865101",
+                "Gene_Stop": "2866465",
+                "Strand": "+",
+                "Protein_Family": "2.A.8.1.7"
+            }
+        ]
+    },
+    "CGC35": {
+        "changelog": [],
+        "Cluster_ID": "CGC35",
+        "Gene_String": "GH102_e2-NA-NA-3.A.7.16.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417293.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "2946081",
+                "Gene_Stop": "2947178",
+                "Strand": "-",
+                "Protein_Family": "GH102_e2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2776;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2947757",
+                "Gene_Stop": "2949010",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2777;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "2949242",
+                "Gene_Stop": "2950573",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417296.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "2950635",
+                "Gene_Stop": "2952461",
+                "Strand": "-",
+                "Protein_Family": "3.A.7.16.1"
+            }
+        ]
+    },
+    "CGC36": {
+        "changelog": [],
+        "Cluster_ID": "CGC36",
+        "Gene_String": "GH1_e0-NA-1.C.113.1.10-1.A.115.1.5",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417377.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3043662",
+                "Gene_Stop": "3045101",
+                "Strand": "+",
+                "Protein_Family": "GH1_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2856;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3043312",
+                "Gene_Stop": "3043623",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417375.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3042489",
+                "Gene_Stop": "3043148",
+                "Strand": "-",
+                "Protein_Family": "1.C.113.1.10"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417378.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3045158",
+                "Gene_Stop": "3045901",
+                "Strand": "-",
+                "Protein_Family": "1.A.115.1.5"
+            }
+        ]
+    },
+    "CGC37": {
+        "changelog": [],
+        "Cluster_ID": "CGC37",
+        "Gene_String": "GH23_e150-NA-NA-NA-NA-2.A.1.10.1-9.B.120.1.1-1.A.54.5.4-2.A.14.1.2",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417438.2",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3104433",
+                "Gene_Stop": "3105512",
+                "Strand": "+",
+                "Protein_Family": "GH23_e150"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2919;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3107020",
+                "Gene_Stop": "3109155",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2921;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3110590",
+                "Gene_Stop": "3111126",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2924;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3113067",
+                "Gene_Stop": "3113477",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds2926;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3114550",
+                "Gene_Stop": "3119112",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417439.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "3105714",
+                "Gene_Stop": "3106970",
+                "Strand": "+",
+                "Protein_Family": "2.A.1.10.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417441.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3109553",
+                "Gene_Stop": "3110260",
+                "Strand": "+",
+                "Protein_Family": "9.B.120.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417446.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "3113543",
+                "Gene_Stop": "3114352",
+                "Strand": "-",
+                "Protein_Family": "1.A.54.5.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417449.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3119597",
+                "Gene_Stop": "3121279",
+                "Strand": "-",
+                "Protein_Family": "2.A.14.1.2"
+            }
+        ]
+    },
+    "CGC38": {
+        "changelog": [],
+        "Cluster_ID": "CGC38",
+        "Gene_String": "GH63_e1-GH2_e92-NA-NA-NA-9.B.334.1.3-9.B.313.1.2-2.A.3.7.4-LacI",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417551.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3228888",
+                "Gene_Stop": "3231239",
+                "Strand": "+",
+                "Protein_Family": "GH63_e1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026199.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3222633",
+                "Gene_Stop": "3225725",
+                "Strand": "+",
+                "Protein_Family": "GH2_e92"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3023;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3220915",
+                "Gene_Stop": "3221247",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3026;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3225722",
+                "Gene_Stop": "3226171",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3028;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3227801",
+                "Gene_Stop": "3228871",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417543.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3217556",
+                "Gene_Stop": "3219076",
+                "Strand": "-",
+                "Protein_Family": "9.B.334.1.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417544.5",
+                "Gene_Type": "TC",
+                "Gene_Start": "3219494",
+                "Gene_Stop": "3220873",
+                "Strand": "+",
+                "Protein_Family": "9.B.313.1.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026200.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3226234",
+                "Gene_Stop": "3227667",
+                "Strand": "+",
+                "Protein_Family": "2.A.3.7.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417546.1",
+                "Gene_Type": "TF",
+                "Gene_Start": "3221466",
+                "Gene_Stop": "3222449",
+                "Strand": "+",
+                "Protein_Family": "LacI"
+            }
+        ]
+    },
+    "CGC39": {
+        "changelog": [],
+        "Cluster_ID": "CGC39",
+        "Gene_String": "GT51_e0-NA-NA-NA-NA-NA-NA-SIS+CBS+CBS-3.A.1.27.3-3.A.1.27.3-3.A.1.27.3-3.A.1.27.3-3.A.1.27.3-2.A.19.5.1-1.B.42.1.2-1.B.42.1.2-1.B.42.1.2-4.A.2.1.4-8.A.8.1.5-9.B.238.3.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417675.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3349081",
+                "Gene_Stop": "3349809",
+                "Strand": "-",
+                "Protein_Family": "GT51_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3142;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3342273",
+                "Gene_Stop": "3342839",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3146;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3344717",
+                "Gene_Stop": "3346150",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3147;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3346173",
+                "Gene_Stop": "3346460",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3149;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3347115",
+                "Gene_Stop": "3347969",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3151;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3348452",
+                "Gene_Stop": "3349084",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3153;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3349806",
+                "Gene_Stop": "3350459",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417664.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "3341266",
+                "Gene_Stop": "3342252",
+                "Strand": "+",
+                "Protein_Family": "SIS+CBS+CBS"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417658.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "3336963",
+                "Gene_Stop": "3337256",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.27.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417659.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3337256",
+                "Gene_Stop": "3337891",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.27.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417660.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3337910",
+                "Gene_Stop": "3338461",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.27.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417661.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3338466",
+                "Gene_Stop": "3339248",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.27.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417662.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3339256",
+                "Gene_Stop": "3340065",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.27.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417663.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3340275",
+                "Gene_Stop": "3341252",
+                "Strand": "+",
+                "Protein_Family": "2.A.19.5.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417666.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3342836",
+                "Gene_Stop": "3343411",
+                "Strand": "+",
+                "Protein_Family": "1.B.42.1.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417667.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3343380",
+                "Gene_Stop": "3343937",
+                "Strand": "+",
+                "Protein_Family": "1.B.42.1.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417668.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3343944",
+                "Gene_Stop": "3344669",
+                "Strand": "+",
+                "Protein_Family": "1.B.42.1.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417671.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3346578",
+                "Gene_Stop": "3347069",
+                "Strand": "+",
+                "Protein_Family": "4.A.2.1.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417673.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3347966",
+                "Gene_Stop": "3348238",
+                "Strand": "+",
+                "Protein_Family": "8.A.8.1.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026207.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3350689",
+                "Gene_Stop": "3353025",
+                "Strand": "-",
+                "Protein_Family": "9.B.238.3.1"
+            }
+        ]
+    },
+    "CGC4": {
+        "changelog": [],
+        "Cluster_ID": "CGC4",
+        "Gene_String": "GT51_e28-NA-NA-NA-HD-1.B.14.1.2-3.A.1.14.3-3.A.1.14.3-3.A.1.14.3-2.A.49.5.1-1.A.62.2.2-3.A.1.13.1-8.A.217.1.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414691.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "164730",
+                "Gene_Stop": "167264",
+                "Strand": "+",
+                "Protein_Family": "GT51_e28"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds149;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "173602",
+                "Gene_Stop": "174882",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds151;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "176610",
+                "Gene_Stop": "176954",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds154;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "178455",
+                "Gene_Stop": "179153",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414702.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "179237",
+                "Gene_Stop": "180754",
+                "Strand": "+",
+                "Protein_Family": "HD"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414692.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "167484",
+                "Gene_Stop": "169727",
+                "Strand": "+",
+                "Protein_Family": "1.B.14.1.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414693.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "169778",
+                "Gene_Stop": "170575",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.14.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414694.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "170575",
+                "Gene_Stop": "171465",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.14.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414695.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "171462",
+                "Gene_Stop": "173444",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.14.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414697.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "175107",
+                "Gene_Stop": "176528",
+                "Strand": "+",
+                "Protein_Family": "2.A.49.5.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414699.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "177001",
+                "Gene_Stop": "177624",
+                "Strand": "-",
+                "Protein_Family": "1.A.62.2.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414700.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "177662",
+                "Gene_Stop": "178462",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.13.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414703.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "180884",
+                "Gene_Stop": "182308",
+                "Strand": "+",
+                "Protein_Family": "8.A.217.1.1"
+            }
+        ]
+    },
+    "CGC40": {
+        "changelog": [],
+        "Cluster_ID": "CGC40",
+        "Gene_String": "GH18_e193-NA-NA-NA-NA-NA-NA-NA-9.B.42.1.3-1.B.22.1.3-3.A.15.1.1-3.A.15.1.1-3.A.15.1.1-3.A.15.1.1-3.A.15.1.1-3.A.15.2.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417797.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3467160",
+                "Gene_Stop": "3469853",
+                "Strand": "-",
+                "Protein_Family": "GH18_e193"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3261;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3455578",
+                "Gene_Stop": "3456393",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3267;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3461974",
+                "Gene_Stop": "3462351",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3268;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3462344",
+                "Gene_Stop": "3462931",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3270;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3463922",
+                "Gene_Stop": "3465085",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3271;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3465082",
+                "Gene_Stop": "3465543",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3273;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3466249",
+                "Gene_Stop": "3466725",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3274;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3466797",
+                "Gene_Stop": "3466991",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417782.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3453929",
+                "Gene_Stop": "3455398",
+                "Strand": "-",
+                "Protein_Family": "9.B.42.1.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417784.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "3456377",
+                "Gene_Stop": "3458329",
+                "Strand": "+",
+                "Protein_Family": "1.B.22.1.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417785.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3458339",
+                "Gene_Stop": "3459820",
+                "Strand": "+",
+                "Protein_Family": "3.A.15.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417786.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3459817",
+                "Gene_Stop": "3461013",
+                "Strand": "+",
+                "Protein_Family": "3.A.15.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417787.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3461023",
+                "Gene_Stop": "3461460",
+                "Strand": "+",
+                "Protein_Family": "3.A.15.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417788.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3461468",
+                "Gene_Stop": "3461977",
+                "Strand": "+",
+                "Protein_Family": "3.A.15.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417791.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3462924",
+                "Gene_Stop": "3463907",
+                "Strand": "+",
+                "Protein_Family": "3.A.15.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417794.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3465543",
+                "Gene_Stop": "3466220",
+                "Strand": "+",
+                "Protein_Family": "3.A.15.2.1"
+            }
+        ]
+    },
+    "CGC41": {
+        "changelog": [],
+        "Cluster_ID": "CGC41",
+        "Gene_String": "GH77_e27-GT35_e0-2.A.8.1.4",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417875.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3547986",
+                "Gene_Stop": "3550070",
+                "Strand": "-",
+                "Protein_Family": "GH77_e27"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026218.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3550080",
+                "Gene_Stop": "3552473",
+                "Strand": "-",
+                "Protein_Family": "GT35_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026217.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3546559",
+                "Gene_Stop": "3547875",
+                "Strand": "+",
+                "Protein_Family": "2.A.8.1.4"
+            }
+        ]
+    },
+    "CGC42": {
+        "changelog": [],
+        "Cluster_ID": "CGC42",
+        "Gene_String": "GT35_e0-GT5_e31-CBM48_e3|GH13_e48-CBM48_e2|CBM48_e2|GH13_e200-NA-NA-NA-Rhodanese-2.A.95.1.5-9.B.104.1.1-2.A.8.1.8",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417886.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3564134",
+                "Gene_Stop": "3566581",
+                "Strand": "-",
+                "Protein_Family": "GT35_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417887.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3566600",
+                "Gene_Stop": "3568033",
+                "Strand": "-",
+                "Protein_Family": "GT5_e31"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417889.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3569346",
+                "Gene_Stop": "3571319",
+                "Strand": "-",
+                "Protein_Family": "CBM48_e3|GH13_e48"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417890.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3571316",
+                "Gene_Stop": "3573502",
+                "Strand": "-",
+                "Protein_Family": "CBM48_e2|CBM48_e2|GH13_e200"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3362;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3562013",
+                "Gene_Stop": "3563518",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3366;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3568033",
+                "Gene_Stop": "3569328",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3369;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3573775",
+                "Gene_Stop": "3574878",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417883.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "3561497",
+                "Gene_Stop": "3561823",
+                "Strand": "-",
+                "Protein_Family": "Rhodanese"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417892.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3575071",
+                "Gene_Stop": "3575664",
+                "Strand": "+",
+                "Protein_Family": "2.A.95.1.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026220.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3560622",
+                "Gene_Stop": "3561452",
+                "Strand": "-",
+                "Protein_Family": "9.B.104.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026221.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3575721",
+                "Gene_Stop": "3577061",
+                "Strand": "-",
+                "Protein_Family": "2.A.8.1.8"
+            }
+        ]
+    },
+    "CGC43": {
+        "changelog": [],
+        "Cluster_ID": "CGC43",
+        "Gene_String": "GH37_e6-5.B.3.1.1-9.B.126.1.1-2.A.1.6.10-9.B.121.1.1-GerE-HTH_1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417976.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3669592",
+                "Gene_Stop": "3671241",
+                "Strand": "+",
+                "Protein_Family": "GH37_e6"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417975.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3667791",
+                "Gene_Stop": "3669188",
+                "Strand": "-",
+                "Protein_Family": "5.B.3.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417979.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3673362",
+                "Gene_Stop": "3674375",
+                "Strand": "+",
+                "Protein_Family": "9.B.126.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417980.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3674786",
+                "Gene_Stop": "3676108",
+                "Strand": "+",
+                "Protein_Family": "2.A.1.6.10"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417981.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "3676290",
+                "Gene_Stop": "3678350",
+                "Strand": "-",
+                "Protein_Family": "9.B.121.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417977.1",
+                "Gene_Type": "TF",
+                "Gene_Start": "3671292",
+                "Gene_Stop": "3671894",
+                "Strand": "-",
+                "Protein_Family": "GerE"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417978.2",
+                "Gene_Type": "TF",
+                "Gene_Start": "3672414",
+                "Gene_Stop": "3673313",
+                "Strand": "+",
+                "Protein_Family": "HTH_1"
+            }
+        ]
+    },
+    "CGC44": {
+        "changelog": [],
+        "Cluster_ID": "CGC44",
+        "Gene_String": "GH8_e0-GT2|GT2-2.A.23.1.7-9.B.34.1.5-4.D.3.1.6-1.B.55.3.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417988.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3689155",
+                "Gene_Stop": "3690261",
+                "Strand": "-",
+                "Protein_Family": "GH8_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417990.4",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3692618",
+                "Gene_Stop": "3695236",
+                "Strand": "-",
+                "Protein_Family": "GT2|GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417985.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3682161",
+                "Gene_Stop": "3683447",
+                "Strand": "-",
+                "Protein_Family": "2.A.23.1.7"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417986.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "3683630",
+                "Gene_Stop": "3685618",
+                "Strand": "-",
+                "Protein_Family": "9.B.34.1.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_417989.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3690268",
+                "Gene_Stop": "3692607",
+                "Strand": "-",
+                "Protein_Family": "4.D.3.1.6"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026226.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "3685700",
+                "Gene_Stop": "3689173",
+                "Strand": "-",
+                "Protein_Family": "1.B.55.3.1"
+            }
+        ]
+    },
+    "CGC45": {
+        "changelog": [],
+        "Cluster_ID": "CGC45",
+        "Gene_String": "GH13_e62-GH73_e253-NA-NA-Aminotran_1_2-9.B.97.1.1-9.B.44.1.1-9.B.44.1.1-3.A.1.2.4-3.A.1.2.4-3.A.1.2.4-3.D.1.9.2-HTH_AraC+HTH_AraC",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418028.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3737497",
+                "Gene_Stop": "3739527",
+                "Strand": "+",
+                "Protein_Family": "GH13_e62"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026230.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3736353",
+                "Gene_Stop": "3737177",
+                "Strand": "-",
+                "Protein_Family": "GH73_e253"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3503;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3727917",
+                "Gene_Stop": "3729371",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3504;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3729443",
+                "Gene_Stop": "3730765",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026231.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "3739705",
+                "Gene_Stop": "3740958",
+                "Strand": "+",
+                "Protein_Family": "Aminotran_1_2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418018.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3725887",
+                "Gene_Stop": "3726882",
+                "Strand": "+",
+                "Protein_Family": "9.B.97.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418019.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "3726924",
+                "Gene_Stop": "3727361",
+                "Strand": "-",
+                "Protein_Family": "9.B.44.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418020.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "3727407",
+                "Gene_Stop": "3727748",
+                "Strand": "-",
+                "Protein_Family": "9.B.44.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418023.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3731131",
+                "Gene_Stop": "3732123",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.2.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418024.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3732201",
+                "Gene_Stop": "3733742",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.2.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418025.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3733720",
+                "Gene_Stop": "3734901",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.2.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418030.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3741109",
+                "Gene_Stop": "3741582",
+                "Strand": "-",
+                "Protein_Family": "3.D.1.9.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418026.1",
+                "Gene_Type": "TF",
+                "Gene_Start": "3734979",
+                "Gene_Stop": "3736157",
+                "Strand": "+",
+                "Protein_Family": "HTH_AraC+HTH_AraC"
+            }
+        ]
+    },
+    "CGC46": {
+        "changelog": [],
+        "Cluster_ID": "CGC46",
+        "Gene_String": "GT2-NA-1.A.34.1.2",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418072.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3789047",
+                "Gene_Stop": "3790081",
+                "Strand": "-",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3560;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3788101",
+                "Gene_Stop": "3789060",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418070.6",
+                "Gene_Type": "TC",
+                "Gene_Start": "3786838",
+                "Gene_Stop": "3788097",
+                "Strand": "+",
+                "Protein_Family": "1.A.34.1.2"
+            }
+        ]
+    },
+    "CGC47": {
+        "changelog": [],
+        "Cluster_ID": "CGC47",
+        "Gene_String": "GH31_e31-NA-NA-NA-NA-3.A.23.6.1-3.A.11.1.5-2.A.27.1.1-2.A.40.4.2-9.B.121.3.1-2.A.2.3.4-2.A.1.20.3-2.A.7.3.12-3.A.1.24.1-2.A.1.2.26-2.A.40.7.4-2.A.1.4.1-2.A.1.4.4",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418113.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3832219",
+                "Gene_Stop": "3834537",
+                "Strand": "-",
+                "Protein_Family": "GH31_e31"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3597;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3824515",
+                "Gene_Stop": "3825204",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3608;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3840215",
+                "Gene_Stop": "3840508",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3610;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3841950",
+                "Gene_Stop": "3842402",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3612;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3843964",
+                "Gene_Stop": "3845730",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418107.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3822400",
+                "Gene_Stop": "3824508",
+                "Strand": "+",
+                "Protein_Family": "3.A.23.6.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418109.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3825210",
+                "Gene_Stop": "3827291",
+                "Strand": "+",
+                "Protein_Family": "3.A.11.1.5"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418110.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3827460",
+                "Gene_Stop": "3828665",
+                "Strand": "-",
+                "Protein_Family": "2.A.27.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418111.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3828945",
+                "Gene_Stop": "3830336",
+                "Strand": "+",
+                "Protein_Family": "2.A.40.4.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418112.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3830457",
+                "Gene_Stop": "3832166",
+                "Strand": "+",
+                "Protein_Family": "9.B.121.3.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418114.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "3834547",
+                "Gene_Stop": "3835929",
+                "Strand": "-",
+                "Protein_Family": "2.A.2.3.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418115.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3836953",
+                "Gene_Stop": "3838137",
+                "Strand": "+",
+                "Protein_Family": "2.A.1.20.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418116.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3838248",
+                "Gene_Stop": "3839171",
+                "Strand": "+",
+                "Protein_Family": "2.A.7.3.12"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418117.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3839175",
+                "Gene_Stop": "3839993",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.24.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418118.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "3840549",
+                "Gene_Stop": "3841739",
+                "Strand": "-",
+                "Protein_Family": "2.A.1.2.26"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418120.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "3842455",
+                "Gene_Stop": "3843789",
+                "Strand": "-",
+                "Protein_Family": "2.A.40.7.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418122.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3845776",
+                "Gene_Stop": "3847167",
+                "Strand": "-",
+                "Protein_Family": "2.A.1.4.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418123.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "3847305",
+                "Gene_Stop": "3848624",
+                "Strand": "-",
+                "Protein_Family": "2.A.1.4.4"
+            }
+        ]
+    },
+    "CGC48": {
+        "changelog": [],
+        "Cluster_ID": "CGC48",
+        "Gene_String": "CE1_e22-GH1_e85-NA-NA-NA-SIS+SIS-1.B.3.1.3-4.A.1.2.2-3.A.1.7.1-3.A.1.7.1-3.A.1.7.1-3.A.1.7.1-3.A.2.1.1-3.A.2.1.1-3.A.2.1.1-3.A.2.1.1-3.A.2.1.1-3.A.2.1.1-3.A.2.1.1-3.A.2.1.1-1.A.77.3.11",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418175.3",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3899408",
+                "Gene_Stop": "3900577",
+                "Strand": "-",
+                "Protein_Family": "CE1_e22"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418177.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3902289",
+                "Gene_Stop": "3903701",
+                "Strand": "-",
+                "Protein_Family": "GH1_e85"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3671;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3905731",
+                "Gene_Stop": "3906567",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3672;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3906853",
+                "Gene_Stop": "3907578",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds3678;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "3913830",
+                "Gene_Stop": "3915200",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418185.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "3911839",
+                "Gene_Stop": "3913668",
+                "Strand": "-",
+                "Protein_Family": "SIS+SIS"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418176.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3900604",
+                "Gene_Stop": "3902220",
+                "Strand": "-",
+                "Protein_Family": "1.B.3.1.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418178.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3903720",
+                "Gene_Stop": "3905597",
+                "Strand": "-",
+                "Protein_Family": "4.A.1.2.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418181.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3907593",
+                "Gene_Stop": "3908366",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.7.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418182.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3908549",
+                "Gene_Stop": "3909439",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.7.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418183.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3909439",
+                "Gene_Stop": "3910398",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.7.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418184.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3910485",
+                "Gene_Stop": "3911525",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.7.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418187.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3915553",
+                "Gene_Stop": "3915972",
+                "Strand": "-",
+                "Protein_Family": "3.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418188.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3915993",
+                "Gene_Stop": "3917375",
+                "Strand": "-",
+                "Protein_Family": "3.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418189.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3917402",
+                "Gene_Stop": "3918265",
+                "Strand": "-",
+                "Protein_Family": "3.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418190.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3918316",
+                "Gene_Stop": "3919857",
+                "Strand": "-",
+                "Protein_Family": "3.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418191.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3919870",
+                "Gene_Stop": "3920403",
+                "Strand": "-",
+                "Protein_Family": "3.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418192.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3920418",
+                "Gene_Stop": "3920888",
+                "Strand": "-",
+                "Protein_Family": "3.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418193.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3920950",
+                "Gene_Stop": "3921189",
+                "Strand": "-",
+                "Protein_Family": "3.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418194.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3921236",
+                "Gene_Stop": "3922051",
+                "Strand": "-",
+                "Protein_Family": "3.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418195.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "3922060",
+                "Gene_Stop": "3922440",
+                "Strand": "-",
+                "Protein_Family": "1.A.77.3.11"
+            }
+        ]
+    },
+    "CGC49": {
+        "changelog": [],
+        "Cluster_ID": "CGC49",
+        "Gene_String": "GT120-GT26_e141-GT56_e0-2.A.66.2.3-2.A.3.1.15",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418241.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3978601",
+                "Gene_Stop": "3979953",
+                "Strand": "+",
+                "Protein_Family": "GT120"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418242.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3979956",
+                "Gene_Stop": "3980696",
+                "Strand": "+",
+                "Protein_Family": "GT26_e141"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026257.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "3977525",
+                "Gene_Stop": "3978604",
+                "Strand": "+",
+                "Protein_Family": "GT56_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418239.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3976278",
+                "Gene_Stop": "3977528",
+                "Strand": "+",
+                "Protein_Family": "2.A.66.2.3"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026258.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "3980887",
+                "Gene_Stop": "3982272",
+                "Strand": "+",
+                "Protein_Family": "2.A.3.1.15"
+            }
+        ]
+    },
+    "CGC5": {
+        "changelog": [],
+        "Cluster_ID": "CGC5",
+        "Gene_String": "GH43_e285|CBM91_e24-2.A.2.3.5",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414805.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "286789",
+                "Gene_Stop": "288399",
+                "Strand": "+",
+                "Protein_Family": "GH43_e285|CBM91_e24"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414804.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "285395",
+                "Gene_Stop": "286777",
+                "Strand": "+",
+                "Protein_Family": "2.A.2.3.5"
+            }
+        ]
+    },
+    "CGC50": {
+        "changelog": [],
+        "Cluster_ID": "CGC50",
+        "Gene_String": "GH31_e85-2.A.1.52.1-1.B.35.2.2-2.A.2.3.9-2.A.2.3.15",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418314.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "4067240",
+                "Gene_Stop": "4069276",
+                "Strand": "-",
+                "Protein_Family": "GH31_e85"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418310.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4062247",
+                "Gene_Stop": "4063512",
+                "Strand": "+",
+                "Protein_Family": "2.A.1.52.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418311.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4063603",
+                "Gene_Stop": "4064295",
+                "Strand": "-",
+                "Protein_Family": "1.B.35.2.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418313.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "4065809",
+                "Gene_Stop": "4067194",
+                "Strand": "-",
+                "Protein_Family": "2.A.2.3.9"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "YP_026275.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4064363",
+                "Gene_Stop": "4065766",
+                "Strand": "-",
+                "Protein_Family": "2.A.2.3.15"
+            }
+        ]
+    },
+    "CGC51": {
+        "changelog": [],
+        "Cluster_ID": "CGC51",
+        "Gene_String": "AA2_e1|AA2_e1-2.A.7.3.26",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418377.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "4133835",
+                "Gene_Stop": "4136015",
+                "Strand": "+",
+                "Protein_Family": "AA2_e1|AA2_e1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418378.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "4136108",
+                "Gene_Stop": "4137013",
+                "Strand": "+",
+                "Protein_Family": "2.A.7.3.26"
+            }
+        ]
+    },
+    "CGC52": {
+        "changelog": [],
+        "Cluster_ID": "CGC52",
+        "Gene_String": "GH4_e0-NA-NA-2.A.2.1.1-2.A.13.1.2",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418543.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "4341911",
+                "Gene_Stop": "4343266",
+                "Strand": "+",
+                "Protein_Family": "GH4_e0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds4038;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "4344929",
+                "Gene_Stop": "4345558",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds4039;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "4345680",
+                "Gene_Stop": "4347326",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418544.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "4343369",
+                "Gene_Stop": "4344790",
+                "Strand": "+",
+                "Protein_Family": "2.A.2.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418547.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4347404",
+                "Gene_Stop": "4348744",
+                "Strand": "-",
+                "Protein_Family": "2.A.13.1.2"
+            }
+        ]
+    },
+    "CGC53": {
+        "changelog": [],
+        "Cluster_ID": "CGC53",
+        "Gene_String": "GH13_e1-NA-4.A.1.2.4-3.A.3.4.1-LacI",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418660.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "4463054",
+                "Gene_Stop": "4464709",
+                "Strand": "-",
+                "Protein_Family": "GH13_e1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds4158;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "4467431",
+                "Gene_Stop": "4467484",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418661.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4464759",
+                "Gene_Stop": "4466180",
+                "Strand": "-",
+                "Protein_Family": "4.A.1.2.4"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418663.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4467625",
+                "Gene_Stop": "4470321",
+                "Strand": "+",
+                "Protein_Family": "3.A.3.4.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418662.1",
+                "Gene_Type": "TF",
+                "Gene_Start": "4466299",
+                "Gene_Stop": "4467246",
+                "Strand": "-",
+                "Protein_Family": "LacI"
+            }
+        ]
+    },
+    "CGC54": {
+        "changelog": [],
+        "Cluster_ID": "CGC54",
+        "Gene_String": "GH109_e7-NA-NA-2.A.1.12.1-3.A.1.14.1-3.A.1.14.1-3.A.1.14.1-3.A.1.14.1-1.B.14.1.20",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418700.2",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "4505287",
+                "Gene_Stop": "4506405",
+                "Strand": "+",
+                "Protein_Family": "GH109_e7"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds4193;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "4506448",
+                "Gene_Stop": "4506573",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds4197;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "4507466",
+                "Gene_Stop": "4508617",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418699.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "4504058",
+                "Gene_Stop": "4505275",
+                "Strand": "+",
+                "Protein_Family": "2.A.1.12.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418707.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4510690",
+                "Gene_Stop": "4511457",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.14.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418708.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4511458",
+                "Gene_Stop": "4512414",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.14.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418709.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4512411",
+                "Gene_Stop": "4513409",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.14.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418710.4",
+                "Gene_Type": "TC",
+                "Gene_Start": "4513406",
+                "Gene_Stop": "4514308",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.14.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418711.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4514353",
+                "Gene_Stop": "4516677",
+                "Strand": "-",
+                "Protein_Family": "1.B.14.1.20"
+            }
+        ]
+    },
+    "CGC55": {
+        "changelog": [],
+        "Cluster_ID": "CGC55",
+        "Gene_String": "GH23_e96-3.A.1.120.8",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418809.4",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "4630733",
+                "Gene_Stop": "4632670",
+                "Strand": "+",
+                "Protein_Family": "GH23_e96"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_418808.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "4628855",
+                "Gene_Stop": "4630522",
+                "Strand": "-",
+                "Protein_Family": "3.A.1.120.8"
+            }
+        ]
+    },
+    "CGC6": {
+        "changelog": [],
+        "Cluster_ID": "CGC6",
+        "Gene_String": "AA3_e57-NA-TetR_N-2.A.15.1.4",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414845.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "325577",
+                "Gene_Stop": "327247",
+                "Strand": "-",
+                "Protein_Family": "AA3_e57"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds310;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "327261",
+                "Gene_Stop": "328733",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414847.3",
+                "Gene_Type": "STP",
+                "Gene_Start": "328747",
+                "Gene_Stop": "329334",
+                "Strand": "-",
+                "Protein_Family": "TetR_N"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414848.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "329463",
+                "Gene_Stop": "331496",
+                "Strand": "+",
+                "Protein_Family": "2.A.15.1.4"
+            }
+        ]
+    },
+    "CGC7": {
+        "changelog": [],
+        "Cluster_ID": "CGC7",
+        "Gene_String": "GH2_e92-NA-NA-Cyanate_lyase-4.C.1.1.6-2.A.39.1.1-2.A.53.3.12-2.A.1.17.1-2.A.1.5.1-HTH_1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414878.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "363231",
+                "Gene_Stop": "366305",
+                "Strand": "-",
+                "Protein_Family": "GH2_e92"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds333;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "356171",
+                "Gene_Stop": "357454",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds338;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "361249",
+                "Gene_Stop": "361860",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414874.1",
+                "Gene_Type": "STP",
+                "Gene_Start": "359489",
+                "Gene_Stop": "359959",
+                "Strand": "+",
+                "Protein_Family": "Cyanate_lyase"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414869.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "352706",
+                "Gene_Stop": "354592",
+                "Strand": "+",
+                "Protein_Family": "4.C.1.1.6"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414870.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "354922",
+                "Gene_Stop": "356181",
+                "Strand": "+",
+                "Protein_Family": "2.A.39.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414873.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "358799",
+                "Gene_Stop": "359458",
+                "Strand": "+",
+                "Protein_Family": "2.A.53.3.12"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414875.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "359992",
+                "Gene_Stop": "361146",
+                "Strand": "+",
+                "Protein_Family": "2.A.1.17.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414877.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "361926",
+                "Gene_Stop": "363179",
+                "Strand": "-",
+                "Protein_Family": "2.A.1.5.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414872.3",
+                "Gene_Type": "TF",
+                "Gene_Start": "357791",
+                "Gene_Stop": "358690",
+                "Strand": "-",
+                "Protein_Family": "HTH_1"
+            }
+        ]
+    },
+    "CGC8": {
+        "changelog": [],
+        "Cluster_ID": "CGC8",
+        "Gene_String": "CE1_e38-GT2-CE14_e27-NA-NA-NA-NA-NA-2.A.1.15.2-1.B.95.1.1-3.A.1.17.1-3.A.1.17.1-3.A.1.17.1",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414889.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "377535",
+                "Gene_Stop": "378368",
+                "Strand": "-",
+                "Protein_Family": "CE1_e38"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414897.1",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "382739",
+                "Gene_Stop": "383935",
+                "Strand": "-",
+                "Protein_Family": "GT2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414898.4",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "384059",
+                "Gene_Stop": "384616",
+                "Strand": "-",
+                "Protein_Family": "CE14_e27"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds350;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "376772",
+                "Gene_Stop": "377311",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds352;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "378462",
+                "Gene_Stop": "379571",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds353;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "379606",
+                "Gene_Stop": "379881",
+                "Strand": "-",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds356;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "381351",
+                "Gene_Stop": "381716",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "cds357;Parent",
+                "Gene_Type": "Null_Type",
+                "Gene_Start": "381674",
+                "Gene_Stop": "382579",
+                "Strand": "+",
+                "Protein_Family": "0"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414887.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "375459",
+                "Gene_Stop": "376670",
+                "Strand": "+",
+                "Protein_Family": "2.A.1.15.2"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414892.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "380069",
+                "Gene_Stop": "380842",
+                "Strand": "-",
+                "Protein_Family": "1.B.95.1.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414899.2",
+                "Gene_Type": "TC",
+                "Gene_Start": "385232",
+                "Gene_Stop": "386194",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.17.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414900.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "386207",
+                "Gene_Stop": "386974",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.17.1"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414901.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "386971",
+                "Gene_Stop": "387798",
+                "Strand": "+",
+                "Protein_Family": "3.A.1.17.1"
+            }
+        ]
+    },
+    "CGC9": {
+        "changelog": [],
+        "Cluster_ID": "CGC9",
+        "Gene_String": "CBM34_e8|GH13_e88-2.A.26.1.10-2.A.3.1.23",
+        "Contig_ID": "NC_000913.3",
+        "ncbi_species_tax_id": [],
+        "organism_name": [],
+        "publication": [],
+        "Protein": [
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414937.2",
+                "Gene_Type": "CAZyme",
+                "Gene_Start": "422518",
+                "Gene_Stop": "424332",
+                "Strand": "+",
+                "Protein_Family": "CBM34_e8|GH13_e88"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414935.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "419591",
+                "Gene_Stop": "420910",
+                "Strand": "+",
+                "Protein_Family": "2.A.26.1.10"
+            },
+            {
+                "contig_id": "NC_000913.3",
+                "protein_id": "NP_414936.1",
+                "Gene_Type": "TC",
+                "Gene_Start": "420986",
+                "Gene_Stop": "422359",
+                "Strand": "+",
+                "Protein_Family": "2.A.3.1.23"
+            }
+        ]
+    }
+}

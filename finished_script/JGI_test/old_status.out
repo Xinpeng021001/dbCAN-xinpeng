@@ -1,0 +1,23 @@
+	Command being timed: "run_dbcan Xylhe1_GeneCatalog_proteins_20130827.aa.fasta protein --out_dir old_dbcan_out --db_dir ../../../run_dbcan/tests/_data/db/ --dia_cpu 40 --hmm_cpu 40"
+	User time (seconds): 4397.66
+	System time (seconds): 483.15
+	Percent of CPU this job got: 131%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:02:02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2981724
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 186
+	Minor (reclaiming a frame) page faults: 8346468
+	Voluntary context switches: 35499894
+	Involuntary context switches: 2798424
+	Swaps: 0
+	File system inputs: 1335784
+	File system outputs: 102184
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

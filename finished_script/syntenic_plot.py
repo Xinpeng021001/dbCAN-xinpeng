@@ -9,6 +9,7 @@ from matplotlib.lines import Line2D
 from matplotlib import pyplot
 from matplotlib.patches import Patch
 import matplotlib
+import warnings
 #matplotlib.use('Agg')
 
 #plt.style.use('ggplot')
@@ -16,6 +17,7 @@ import matplotlib
 import argparse,os
 
 #blocks = ["0-0-30","2-10-50"]
+warnings.filterwarnings("ignore", category=UserWarning)
 
 class blastp_hit(object):
     def __init__(self,lines):
@@ -151,12 +153,16 @@ def Get_Position(starts,ends,strands,maxbp,yshift=0,up=1):
 
 
 def plot_Polygon_homologous(polygens1,polygens2,types1,types2,size,ax):
-    colors_map = {"CAZyme":"#FF0000","null":"#808080","other":"#808080",
-    "TC":"#9400D3","CDS":"#00FFFF","STP":"#0000FF","TF":"#1E90FF"}
+#    colors_map = {"CAZyme":"#FF0000","null":"#808080","other":"#808080",
+#    "TC":"#9400D3","CDS":"#00FFFF","STP":"#0000FF","TF":"#1E90FF"}
+
+    colors_map = {"CAZyme":"#FF0000","null":"#808080","Other":"#000000",
+    "TC":"#9400D3","STP":"#0000FF","TF":"#1E90FF"}
+    default_color = "#000000"
     for j in range(len(polygens1)):
         polygen = polygens1[j].split()
         points = []
-        color  = colors_map[types1[j]]
+        color = colors_map.get(types1[j], default_color)
         for i in range(int(len(polygen)/2)):
             points.append([float(polygen[2*i]),float(polygen[2*i+1])])
         ax.add_patch(
@@ -166,7 +172,7 @@ def plot_Polygon_homologous(polygens1,polygens2,types1,types2,size,ax):
     for j in range(len(polygens2)):
         polygen = polygens2[j].split()
         points = []
-        color  = colors_map[types2[j]]
+        color  = colors_map.get(types2[j], default_color)
         for i in range(int(len(polygen)/2)):
             points.append([float(polygen[2*i]),float(polygen[2*i+1])])
         ax.add_patch(
@@ -281,8 +287,8 @@ def syntenic_plot(starts,starts1,ends,ends1,strands,strands1,Types,Types1,blocks
         Patch(color="#0000FF", alpha=0.5),
         Patch(color="#1E90FF", alpha=0.5)]
 
-    genelabelcolor=["#FF0000","#808080","#9400D3","#0000FF","#1E90FF"]
-    geneslabels    = ["CAZyme","Other","TC","STP","TF"]
+    genelabelcolor=["#FF0000","#808080","#9400D3","#0000FF","#1E90FF","#000000"]
+    geneslabels    = ["CAZyme","Null","TC","STP","TF","Other"]
 
     ### for legends
 

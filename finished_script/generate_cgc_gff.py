@@ -45,7 +45,7 @@ class GFFProcessor:
     def load_cgc_type(self):
         df = pd.read_csv(self.cazyme_overview, sep='\t', usecols=[0, 5, 6], names=['protein_id', '#ofTools', 'CAZyme'])
         df['#ofTools'] = pd.to_numeric(df['#ofTools'], errors='coerce')
-        overview_df = df[df['#ofTools'] >= 2]
+        overview_df = df[df['#ofTools'] >= 2].copy()
         overview_df['CGC_annotation'] = 'CAZyme' + '|' + overview_df['CAZyme'].astype(str)
 
 

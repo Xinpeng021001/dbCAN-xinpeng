@@ -1,0 +1,21 @@
+#cgcid	PULID	dbCAN-PUL substrate	bitscore	signature pairs	dbCAN-sub substrate	dbCAN-sub substrate score
+NC_000913.3|CGC19	PUL0575	raffinose	610.2	CAZyme-CAZyme;TC-TC;TC-TC;TC-TC;TC-TC;TC-TC;TC-TC		
+NC_000913.3|CGC38	PUL0272	beta-galactooligosaccharide	559.0	TF-TF;CAZyme-CAZyme		
+NC_000913.3|CGC52	PUL0111	melibiose	1899.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC12	PUL0579	glycosaminoglycan	747.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC42	PUL0605	glycogen	5665.799999999999	CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme	glycogen	3.0
+NC_000913.3|CGC22	PUL0100	chitin	2838.0	CAZyme-CAZyme;TF-TF;TC-TC;TC-TC;TC-TC		
+NC_000913.3|CGC29	PUL0390	xylan	877.5	TC-TC;TC-TC;TC-TC;TC-TC;TC-TC;CAZyme-CAZyme		
+NC_000913.3|CGC48	PUL0041	cellobiose	1424.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC5	PUL0402	xylan	630.0	TC-TC;CAZyme-CAZyme		
+NC_000913.3|CGC21	PUL0558	pectin	523.9	CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme		
+NC_000913.3|CGC41	PUL0519	starch	619.9	CAZyme-CAZyme;CAZyme-CAZyme		
+NC_000913.3|CGC53	PUL0048	trehalose	943.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC45	PUL0454	alpha-glucan	402.7	TC-TC;CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme		
+NC_000913.3|CGC44	PUL0311	cellulose	6483.0	CAZyme-CAZyme;TC-TC;CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC50	PUL0291	human milk oligosaccharide	5028.0	TC-TC;TC-TC;TC-TC;CAZyme-CAZyme;TC-TC;TC-TC		
+NC_000913.3|CGC33	PUL0041	cellobiose	754.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC7	PUL0651	agarose	134.4	TF-TF;CAZyme-CAZyme		
+NC_000913.3|CGC27	PUL0281	capsule polysaccharide synthesis	828.8	CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme		
+NC_000913.3|CGC28	PUL0286	capsule polysaccharide synthesis	1102.8	CAZyme-CAZyme;CAZyme-CAZyme;TC-TC;TC-TC		
+NC_000913.3|CGC47	PUL0291	human milk oligosaccharide	532.0	CAZyme-CAZyme;TC-TC;TC-TC		
