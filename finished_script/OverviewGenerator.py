@@ -91,8 +91,6 @@ class OverviewGenerator:
             results['Recommend Results'] = '|'.join([name.split('(')[0] for name in results['dbCAN_hmm'].split('|')])
         elif results['dbCAN_sub'] != '-':
             results['Recommend Results'] = '|'.join([name.split('(')[0] for name in results['dbCAN_sub'].split('|')])
-        elif results['DIAMOND'] != '-':
-            results['Recommend Results'] = results['DIAMOND']
 
         return results
 
