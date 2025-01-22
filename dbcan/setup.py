@@ -4,16 +4,29 @@ setup(
     name='dbcan',
     version='5.0.0',
     packages=find_packages(),
+    install_requires=[
+        'pandas',
+        'psutil',
+        'tqdm',
+        'pandas',
+        'requests',
+        'matplotlib',
+        'openpyxl',
+        'pyhmmer',
+        'biopython==1.84',
+        'bcbio-gff',
+        'pyrodigal'        # 添加其他需要的依赖
+    ],
     entry_points={
         'console_scripts': [
-            'run_dbcan=main.py.main:main'
+            'run_dbcan=dbcan.run_dbcan:main'
         ]
     },
     author='Xinpeng Zhang',
     author_email='xzhang55@huskers.unl.edu',
     description='Update version for dbCAN',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
+#    long_description=open('README.md').read(),
+#    long_description_content_type='text/markdown',
     url='https://github.com/Xinpeng021001/dbCAN-xinpeng',
     license='MIT',
     classifiers=[
