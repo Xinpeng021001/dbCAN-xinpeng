@@ -357,7 +357,7 @@ def syntenic_plot_allpairs(args):
     pdf_directory = os.path.join(args.output_dir, "synteny_pdf")    
     os.makedirs(pdf_directory, exist_ok=True)
 
-    for line in open(args.input).readlines()[1:]: ### for each pairs
+    for line in open(args.input_sub_out).readlines()[1:]: ### for each pairs
         lines = line.rstrip().split("\t")
         cgc = lines[0]
         pul = lines[1]

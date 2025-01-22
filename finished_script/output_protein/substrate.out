@@ -1,0 +1,9 @@
+#cgcid	PULID	dbCAN-PUL substrate	bitscore	signature pairs	dbCAN-sub substrate	dbCAN-sub substrate score
+NC_000913.3|CGC51	PUL0111	melibiose	1841.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC22	PUL0100	chitin	2708.0	CAZyme-CAZyme;TC-TC;TC-TC;TC-TC		
+NC_000913.3|CGC43	PUL0311	cellulose	6235.0	CAZyme-CAZyme;TC-TC;CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC47	PUL0041	cellobiose	1425.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC41	PUL0605	glycogen	6426.0	CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme;CAZyme-CAZyme	glycogen	3.0
+NC_000913.3|CGC33	PUL0041	cellobiose	751.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC12	PUL0579	glycosaminoglycan	908.0	CAZyme-CAZyme;TC-TC		
+NC_000913.3|CGC49	PUL0291	human milk oligosaccharide	3778.0	TC-TC;TC-TC;CAZyme-CAZyme;TC-TC		

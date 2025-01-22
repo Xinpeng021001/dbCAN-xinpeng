@@ -1,0 +1,17 @@
+name: dbCAN-test
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pyrodigal
+  - pyhmmer
+  - diamond
+  - pandas
+  - bcbio-gff
+  - tqdm
+  - requests
+  - openpyxl
+  - matplotlib
+  - biopython=1.84
