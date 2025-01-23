@@ -46,13 +46,18 @@ class PyHMMERProcessor:
                             results.append([hmm_name, hmm_length, target_name, target_length, i_evalue, hmm_from, hmm_to, target_from, target_to, coverage, hmm_file_name])
                             
         logging.info(f"{self.hmm_file} PyHMMER search completed. Found {len(results)} hits.")
-        df = pd.DataFrame(results, columns=[
-            'HMM Name', 'HMM Length', 'Target Name', 'Target Length', 'i-Evalue',
-            'HMM From', 'HMM To', 'Target From', 'Target To', 'Coverage', 'HMM File Name'])
-        df.sort_values(by=['Target Name', 'Target From', 'Target To'], inplace=True)
-        df_filtered = self.filter_overlaps(df)
-        df_filtered.to_csv(self.output_file, index=False, sep='\t')
-
+        if results:
+            df = pd.DataFrame(results, columns=[
+                'HMM Name', 'HMM Length', 'Target Name', 'Target Length', 'i-Evalue',
+                'HMM From', 'HMM To', 'Target From', 'Target To', 'Coverage', 'HMM File Name'])
+            df.sort_values(by=['Target Name', 'Target From', 'Target To'], inplace=True)
+            df_filtered = self.filter_overlaps(df)
+            df_filtered.to_csv(self.output_file, index=False, sep='\t')
+        else:
+            df = pd.DataFrame(columns=[
+                'HMM Name', 'HMM Length', 'Target Name', 'Target Length', 'i-Evalue',
+                'HMM From', 'HMM To', 'Target From', 'Target To', 'Coverage', 'HMM File Name'])
+            df.to_csv(self.output_file, index=False, sep='\t')
     def filter_overlaps(self, df):
         filtered = []
         grouped = df.groupby('Target Name')

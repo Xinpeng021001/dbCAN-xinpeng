@@ -15,7 +15,7 @@ setup(
         'pyhmmer',
         'biopython==1.84',
         'bcbio-gff',
-        'pyrodigal'        # 添加其他需要的依赖
+        'pyrodigal'        
     ],
     entry_points={
         'console_scripts': [
