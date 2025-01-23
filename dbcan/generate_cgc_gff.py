@@ -60,70 +60,76 @@ class GFFProcessor:
     def process_gff(self):
         cgc_data = self.load_cgc_type()
         with open(self.input_gff) as input_file, open(self.output_gff, 'w') as output_file:
-            for record in GFF.parse(input_file):
-                for feature in record.features:
-                    if feature.type == 'gene':
-                        protein_id = 'unknown'
-                        cgc_annotation = 'unknown'
-                        if self.gff_type == "NCBI_euk":
-                            non_mRNA_found = False
-                            for sub_feature in feature.sub_features:
-                                if 'mRNA' not in sub_feature.type:
-                                    protein_id = 'NA'
-                                    Name = feature.qualifiers.get('Name', ['unknown'])[0]
-                                    cgc_annotation = 'Other' + '|' + sub_feature.type
-                                    non_mRNA_found = True
-                                    break
+            if self.gff_type != "prodigal":
+                for record in GFF.parse(input_file):
+                    for feature in record.features:
+                        if feature.type == 'gene':
+                            protein_id = 'unknown'
+                            cgc_annotation = 'unknown'
+                            if self.gff_type == "NCBI_euk":
+                                non_mRNA_found = False
+                                for sub_feature in feature.sub_features:
+                                    if 'mRNA' not in sub_feature.type:
+                                        protein_id = 'NA'
+                                        Name = feature.qualifiers.get('Name', ['unknown'])[0]
+                                        cgc_annotation = 'Other' + '|' + sub_feature.type
+                                        non_mRNA_found = True
+                                        break
 
-                            if non_mRNA_found:
-                                start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
-                                line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation};Name={Name}\n"
-                                output_file.write(line)
-                                continue
+                                if non_mRNA_found:
+                                    start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
+                                    line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation};Name={Name}\n"
+                                    output_file.write(line)
+                                    continue
 
-                            for sub_feature in feature.sub_features:
-                                if sub_feature.type == 'mRNA':
-                                    for sub_sub_feature in sub_feature.sub_features:
-                                        if sub_sub_feature.type == 'CDS':
-                                            protein_id = sub_sub_feature.qualifiers.get('protein_id', ['unknown'])[0]
+                                for sub_feature in feature.sub_features:
+                                    if sub_feature.type == 'mRNA':
+                                        for sub_sub_feature in sub_feature.sub_features:
+                                            if sub_sub_feature.type == 'CDS':
+                                                protein_id = sub_sub_feature.qualifiers.get('protein_id', ['unknown'])[0]
+                                                break
+                                        if protein_id != 'unknown':
                                             break
+
+                            elif self.gff_type == "NCBI_prok":
+                                non_CDS_found  = False
+                                for sub_feature in feature.sub_features:
+                                    if 'CDS' not in sub_feature.type:
+                                        protein_id = 'NA'
+                                        cgc_annotation = 'Other' + '|' + sub_feature.type
+                                        non_CDS_found = True
+                                        break
+
+                                if non_CDS_found:
+                                    start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
+                                    line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation}\n"
+                                    output_file.write(line)
+                                    continue
+
+                                for sub_feature in feature.sub_features:
+                                    if sub_feature.type == 'CDS':
+                                        protein_id = sub_feature.qualifiers.get('protein_id', ['unknown'])[0]
                                     if protein_id != 'unknown':
                                         break
 
-                        elif self.gff_type == "NCBI_prok":
-                            non_CDS_found  = False
-                            for sub_feature in feature.sub_features:
-                                if 'CDS' not in sub_feature.type:
-                                    protein_id = 'NA'
-                                    cgc_annotation = 'Other' + '|' + sub_feature.type
-                                    non_CDS_found = True
-                                    break
-
-                            if non_CDS_found:
-                                start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
-                                line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation}\n"
-                                output_file.write(line)
-                                continue
-
-                            for sub_feature in feature.sub_features:
-                                if sub_feature.type == 'CDS':
-                                    protein_id = sub_feature.qualifiers.get('protein_id', ['unknown'])[0]
-                                if protein_id != 'unknown':
-                                    break
+                            elif self.gff_type == "JGI":
+                                protein_id = feature.qualifiers.get("proteinId", ["unknown"])[0]
 
 
+                            cgc_annotation = cgc_data.get(protein_id, {}).get('CGC_annotation', 'null')
+                            start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
+                            line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation}\n"
+                            output_file.write(line)
 
-
-                        elif self.gff_type == "JGI":
-                            protein_id = feature.qualifiers.get("proteinId", ["unknown"])[0]
-                        elif self.gff_type == "prodigal":
+            elif self.gff_type == "prodigal":
+                for record in GFF.parse(input_file):
+                    for feature in record.features:
                             protein_id = feature.qualifiers.get("ID", ["unknown"])[0]
+                            cgc_annotation = cgc_data.get(protein_id, {}).get('CGC_annotation', 'null')
+                            start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
+                            line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation}\n"
+                            output_file.write(line)
 
-                        cgc_annotation = cgc_data.get(protein_id, {}).get('CGC_annotation', 'null')
-
-                        start, end, strand = feature.location.start + 1, feature.location.end, '+' if feature.location.strand >= 0 else '-'
-                        line = f"{record.id}\t.\t{feature.type}\t{start}\t{end}\t.\t{strand}\t.\tprotein_id={protein_id};CGC_annotation={cgc_annotation}\n"
-                        output_file.write(line)
 
         logging.info(f"Updated GFF file saved to {self.output_gff}.")
         
@@ -131,13 +137,13 @@ class GFFProcessor:
 
 # if __name__ == '__main__':
 #     config = {
-#     'input_total_faa': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/part1_script/NCBI_test/output/uniInput.faa',
-#     'output_dir': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/part1_script/NCBI_test/output',
-#     'cazyme_overview': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/part1_script/NCBI_test/output/overview.tsv',
-#     'cgc_sig_file': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/part1_script/NCBI_test/output/test_total_cgc_info.tsv',
-#     'input_gff': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/part1_script/NCBI_test/output/uniInput.gff',
-#     'output_gff': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/part1_script/NCBI_test/output/cgc.gff',
-#     'gff_type': 'NCBI'  # ncbi, jgi, prodigal
+#     'input_total_faa': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/spacedust_test/test_out_cgc/uniInput.faa',
+#     'output_dir': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/spacedust_test/test_out_cgc',
+#     'cazyme_overview': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/spacedust_test/test_out_cgc/overview.tsv',
+#     'cgc_sig_file': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/spacedust_test/test_out_cgc/total_cgc_info.tsv',
+#     'input_gff': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/spacedust_test/PUL0422_MGYG000003351_C1.gff',
+#     'output_gff': '/mnt/array2/xinpeng/dbcan_nf/dbCAN-xinpeng/spacedust_test/test_out_cgc/cgc.gff',
+#     'gff_type': 'prodigal'  # ncbi, jgi, prodigal
 # }
 # processor = GFFProcessor(config)
 # processor.generate_non_cazyme_faa()
