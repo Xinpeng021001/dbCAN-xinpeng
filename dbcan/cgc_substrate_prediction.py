@@ -8,7 +8,6 @@ import numpy as np
 import math
 import json
 import time
-from syntenic_plot import syntenic_plot_allpairs
 #ROOT_FOLDR = "/mnt/raid5-1/jinfang/dbCAN3/db/"
 
 def Sum_bitscore(genes):
